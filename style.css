@@ -1,0 +1,326 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+body div.menuButton {
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+  position: absolute;
+  left: 5vw;
+  top: 2vh;
+}
+
+body div.menuButton span {
+  width: 40px;
+  height: 4px;
+  background: black;
+  margin: 0.3rem 0;
+  display: block;
+}
+
+body div.slideMenu {
+  position: absolute;
+  width: 100vw;
+  min-height: 100vh;
+  height: auto;
+  background: #d890d2;
+  right: -100vw;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+  z-index: 100;
+}
+
+body div.slideMenu ol {
+  list-style: none;
+  position: relative;
+  top: 2rem;
+}
+
+body div.slideMenu ol li {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  border: 2px solid black;
+  max-width: 75vw;
+}
+
+body div.slideMenu ol li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+body div.slideMenu ol :hover {
+  background: white;
+}
+
+body header {
+  background-color: #fac9fa;
+}
+
+body header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+body header div img {
+  height: 10vh;
+  width: 10vh;
+  border-radius: 2rem;
+}
+
+body header div h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+body section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: start;
+}
+
+body section img {
+  display: block;
+  margin: auto;
+  padding: 1rem;
+  width: 80vw;
+  max-width: 500px;
+  height: 40vh;
+  max-height: 500px;
+  border-radius: 50%;
+}
+
+body section h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+body section p {
+  font-size: 0.5rem;
+  text-align: start;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+body section h2 {
+  padding-left: 1rem;
+  text-decoration: underline;
+}
+
+body section hr {
+  width: 80vw;
+  margin: auto;
+}
+
+body section iframe {
+  display: block;
+  margin: 1rem auto;
+}
+
+body footer {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #fac9fa;
+}
+
+body footer h3 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+div.menuButton.trigger {
+  position: absolute;
+  left: 80vw;
+  z-index: 100000000000;
+}
+
+div.slideMenu.trigger {
+  position: absolute;
+  left: 0;
+}
+
+.MoveOut {
+  position: absolute;
+  right: -100vw;
+}
+
+@-webkit-keyframes moveIn {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes moveIn {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes moveOut {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+}
+
+@keyframes moveOut {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    background-color: #eeeeb4;
+  }
+  body div.menuButton {
+    display: none;
+    -webkit-transition: all 2s ease;
+    transition: all 2s ease;
+    position: absolute;
+    left: 5vw;
+    top: 2vh;
+  }
+  body div.menuButton span {
+    width: 40px;
+    height: 4px;
+    background: black;
+    margin: 0.3rem 0;
+    display: block;
+  }
+  body div.slideMenu {
+    display: block;
+    position: static;
+    width: 100vw;
+    height: auto;
+    background: #d890d2;
+    right: -100vw;
+    -webkit-transition: all 2s ease;
+    transition: all 2s ease;
+  }
+  body div.slideMenu ol {
+    list-style: none;
+    position: static;
+    top: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body div.slideMenu ol li {
+    margin: 1rem 1rem;
+    padding: 1rem;
+    border: 2px solid black;
+  }
+  body div.slideMenu ol li a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+  }
+  body div.slideMenu ol :hover {
+    background: white;
+  }
+  body header {
+    position: absolute;
+    top: 0;
+    left: 75vw;
+    height: 10vh;
+    background-color: rgba(225, 225, 225, 0);
+  }
+  body header div {
+    max-height: 10vh;
+    min-width: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  body header div img {
+    height: 8vh;
+    width: 8vh;
+  }
+  body header div h1 {
+    font-size: 3vh;
+  }
+  body section {
+    background-color: white;
+    max-width: 80vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem auto;
+    border: 2px solid black;
+  }
+  body section h1 {
+    font-size: 2.5rem;
+  }
+  body section p {
+    font-size: 2rem;
+  }
+  footer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  footer div h3 {
+    font-size: 2rem;
+  }
+  footer div h4 {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
