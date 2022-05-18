@@ -230,10 +230,10 @@ div.slideMenu.trigger {
     display: block;
   }
   body div.slideMenu {
-    display: block;
+    display: inline;
     position: static;
-    width: 100vw;
-    height: auto;
+    width: 50px;
+    height: 50px;
     background: #d890d2;
     right: -100vw;
     -webkit-transition: all 2s ease;
@@ -246,11 +246,27 @@ div.slideMenu.trigger {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   body div.slideMenu ol li {
     margin: 1rem 1rem;
     padding: 1rem;
     border: 2px solid black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: #d890d2;
   }
   body div.slideMenu ol li a {
     text-decoration: none;
@@ -261,6 +277,7 @@ div.slideMenu.trigger {
     background: white;
   }
   body header {
+    display: none;
     position: absolute;
     top: 0;
     left: 75vw;
@@ -303,6 +320,10 @@ div.slideMenu.trigger {
             align-items: center;
     margin: 1rem auto;
     border: 2px solid black;
+  }
+  body section img {
+    max-width: 200px;
+    max-height: 200px;
   }
   body section h1 {
     font-size: 2.5rem;
