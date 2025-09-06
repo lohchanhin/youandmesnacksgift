@@ -15,7 +15,7 @@ export const products: Product[] = [
     price: "RM66.90-RM69.90",
     description: "1 of 16inch bobo with sticker(RM39.90) + 6 of 12inch balloons (RM4.50/RM5.00)",
     category: "helium-balloon",
-    images: ["/Helium/Helium/A.jpeg", "/Helium/Helium/A2.jpeg", "/Helium/Helium/A3.jpeg", "/Helium/Helium/A4.jpeg"],
+    images: ["/products/helium/a.jpeg", "/products/helium/a2.jpeg", "/products/helium/a3.jpeg", "/products/helium/a4.jpeg"],
   },
   {
     id: "helium-2",
@@ -23,7 +23,7 @@ export const products: Product[] = [
     price: "RM37.00-RM40.00",
     description: "2 of number balloons (RM18.50/RM20.00)",
     category: "helium-balloon",
-    images: ["/Helium/Helium/B.jpeg", "/Helium/Helium/B2.jpeg", "/Helium/Helium/B3.jpeg", "/Helium/Helium/B4.jpeg"],
+    images: ["/products/helium/b.jpeg", "/products/helium/b2.jpeg", "/products/helium/b3.jpeg", "/products/helium/b4.jpeg"],
   },
   {
     id: "helium-3",
@@ -32,20 +32,20 @@ export const products: Product[] = [
     description: "Single 12 inch helium balloon",
     category: "helium-balloon",
     images: [
-      "/Helium/Helium/C.jpeg",
-      "/Helium/Helium/C2.jpeg",
-      "/Helium/Helium/C3.jpeg",
-      "/Helium/Helium/C4.jpeg",
-      "/Helium/Helium/C5.jpeg",
-      "/Helium/Helium/C6.jpeg",
-      "/Helium/Helium/C7.jpeg",
-      "/Helium/Helium/C8.jpeg",
-      "/Helium/Helium/C9.jpeg",
-      "/Helium/Helium/C10.jpeg",
-      "/Helium/Helium/C11.jpeg",
-      "/Helium/Helium/C12.jpeg",
-      "/Helium/Helium/C13.jpeg",
-      "/Helium/Helium/C14.jpeg",
+      "/products/helium/c.jpeg",
+      "/products/helium/c2.jpeg",
+      "/products/helium/c3.jpeg",
+      "/products/helium/c4.jpeg",
+      "/products/helium/c5.jpeg",
+      "/products/helium/c6.jpeg",
+      "/products/helium/c7.jpeg",
+      "/products/helium/c8.jpeg",
+      "/products/helium/c9.jpeg",
+      "/products/helium/c10.jpeg",
+      "/products/helium/c11.jpeg",
+      "/products/helium/c12.jpeg",
+      "/products/helium/c13.jpeg",
+      "/products/helium/c14.jpeg",
     ],
   },
   {
@@ -54,7 +54,7 @@ export const products: Product[] = [
     price: "RM64.00-RM70.00",
     description: "Special surprise balloon arrangement",
     category: "helium-balloon",
-    images: ["/Helium/Helium/D.jpeg"],
+    images: ["/products/helium/d.jpeg"],
   },
   {
     id: "helium-5",
@@ -62,7 +62,7 @@ export const products: Product[] = [
     price: "RM55.00-RM60.00",
     description: "Birthday themed balloon set",
     category: "helium-balloon",
-    images: ["/Helium/Helium/E.jpeg"],
+    images: ["/products/helium/e.jpeg"],
   },
   {
     id: "helium-6",
@@ -70,7 +70,7 @@ export const products: Product[] = [
     price: "RM19.00-RM25.00",
     description: "Simple balloon arrangement",
     category: "helium-balloon",
-    images: ["/Helium/Helium/F.jpeg", "/Helium/Helium/F2.jpeg"],
+    images: ["/products/helium/f.jpeg", "/products/helium/f2.jpeg"],
   },
   {
     id: "helium-7",
@@ -78,7 +78,7 @@ export const products: Product[] = [
     price: "RM70.00",
     description: "Premium special balloon set",
     category: "helium-balloon",
-    images: ["/Helium/Helium/G.jpeg"],
+    images: ["/products/helium/g.jpeg"],
   },
   {
     id: "helium-8",
@@ -86,7 +86,7 @@ export const products: Product[] = [
     price: "RM37.00-RM40.00",
     description: "Standard birthday balloon set",
     category: "helium-balloon",
-    images: ["/Helium/Helium/H.jpeg"],
+    images: ["/products/helium/h.jpeg"],
   },
   {
     id: "helium-9",
@@ -94,7 +94,7 @@ export const products: Product[] = [
     price: "1PCS RM10.00",
     description: "Single 18 inch heart or star foil balloon",
     category: "helium-balloon",
-    images: ["/Helium/Helium/I.jpeg", "/Helium/Helium/I2.jpeg"],
+    images: ["/products/helium/i.jpeg", "/products/helium/i2.jpeg"],
   },
   {
     id: "helium-10",
@@ -102,7 +102,7 @@ export const products: Product[] = [
     price: "RM32.50-RM40.00",
     description: "Classic balloon arrangement",
     category: "helium-balloon",
-    images: ["/Helium/Helium/J.jpeg"],
+    images: ["/products/helium/j.jpeg"],
   },
   {
     id: "helium-11",
@@ -110,7 +110,7 @@ export const products: Product[] = [
     price: "RM28.50-RM30.00",
     description: "Kid-friendly balloon set",
     category: "helium-balloon",
-    images: ["/Helium/Helium/K.jpeg"],
+    images: ["/products/helium/k.jpeg"],
   },
   {
     id: "helium-12",
@@ -118,7 +118,7 @@ export const products: Product[] = [
     price: "RM35.00",
     description: "20 inch printed bobo balloon",
     category: "helium-balloon",
-    images: ["/Helium/Helium/L.jpeg"],
+    images: ["/products/helium/l.jpeg"],
   },
   {
     id: "helium-13",
@@ -126,7 +126,7 @@ export const products: Product[] = [
     price: "RM57.00-RM60.00",
     description: "Unique balloon arrangement",
     category: "helium-balloon",
-    images: ["/Helium/Helium/M.jpeg"],
+    images: ["/products/helium/m.jpeg"],
   },
   {
     id: "helium-14",
@@ -134,7 +134,7 @@ export const products: Product[] = [
     price: "RM50.00",
     description: "Amazing foil balloon set",
     category: "helium-balloon",
-    images: ["/Helium/Helium/N.jpeg"],
+    images: ["/products/helium/n.jpeg"],
   },
   {
     id: "helium-15",
@@ -142,7 +142,7 @@ export const products: Product[] = [
     price: "RM120.90-RM127.90",
     description: "Premium 18 inch bobo jumbo set",
     category: "helium-balloon",
-    images: ["/Helium/Helium/O.jpeg"],
+    images: ["/products/helium/o.jpeg"],
   },
 
   // Bobo/Foil Balloon Category (7 products)
@@ -153,10 +153,10 @@ export const products: Product[] = [
     description: "8 inch bobo balloon with 6 mini balloons",
     category: "bobo-foil-balloon",
     images: [
-      "/BoboFoil/BOBO BALLOON 8-16INCH/A.jpeg",
-      "/BoboFoil/BOBO BALLOON 8-16INCH/A2.jpeg",
-      "/BoboFoil/BOBO BALLOON 8-16INCH/A3.jpeg",
-      "/BoboFoil/BOBO BALLOON 8-16INCH/A4.jpeg",
+      "/products/bobo-foil/bobo-balloon-8-16inch/a.jpeg",
+      "/products/bobo-foil/bobo-balloon-8-16inch/a2.jpeg",
+      "/products/bobo-foil/bobo-balloon-8-16inch/a3.jpeg",
+      "/products/bobo-foil/bobo-balloon-8-16inch/a4.jpeg",
     ],
   },
   {
@@ -166,21 +166,21 @@ export const products: Product[] = [
     description: "12 inch bobo balloon with 6 mini balloons",
     category: "bobo-foil-balloon",
     images: [
-      "/BoboFoil/BOBO BALLOON 8-16INCH/B.jpeg",
-      "/BoboFoil/BOBO BALLOON 8-16INCH/B2.jpeg",
-      "/BoboFoil/BOBO BALLOON 8-16INCH/B3.jpeg",
-      "/BoboFoil/BOBO BALLOON 8-16INCH/B4.jpeg",
-      "/BoboFoil/BOBO BALLOON 8-16INCH/B5.jpeg",
-      "/BoboFoil/BOBO BALLOON 8-16INCH/B6.jpeg",
-      "/BoboFoil/BOBO BALLOON 8-16INCH/B7.jpeg",
-      "/BoboFoil/BOBO BALLOON 8-16INCH/B8.jpeg",
-      "/BoboFoil/BOBO BALLOON 8-16INCH/B9.jpeg",
-      "/BoboFoil/BOBO BALLOON 8-16INCH/B10.jpeg",
-      "/BoboFoil/BOBO BALLOON 8-16INCH/B11.jpeg",
-      "/BoboFoil/BOBO BALLOON 8-16INCH/B12.jpeg",
-      "/BoboFoil/BOBO BALLOON 8-16INCH/B13.jpeg",
-      "/BoboFoil/BOBO BALLOON 8-16INCH/B14.jpeg",
-      "/BoboFoil/BOBO BALLOON 8-16INCH/B15.jpeg",
+      "/products/bobo-foil/bobo-balloon-8-16inch/b.jpeg",
+      "/products/bobo-foil/bobo-balloon-8-16inch/b2.jpeg",
+      "/products/bobo-foil/bobo-balloon-8-16inch/b3.jpeg",
+      "/products/bobo-foil/bobo-balloon-8-16inch/b4.jpeg",
+      "/products/bobo-foil/bobo-balloon-8-16inch/b5.jpeg",
+      "/products/bobo-foil/bobo-balloon-8-16inch/b6.jpeg",
+      "/products/bobo-foil/bobo-balloon-8-16inch/b7.jpeg",
+      "/products/bobo-foil/bobo-balloon-8-16inch/b8.jpeg",
+      "/products/bobo-foil/bobo-balloon-8-16inch/b9.jpeg",
+      "/products/bobo-foil/bobo-balloon-8-16inch/b10.jpeg",
+      "/products/bobo-foil/bobo-balloon-8-16inch/b11.jpeg",
+      "/products/bobo-foil/bobo-balloon-8-16inch/b12.jpeg",
+      "/products/bobo-foil/bobo-balloon-8-16inch/b13.jpeg",
+      "/products/bobo-foil/bobo-balloon-8-16inch/b14.jpeg",
+      "/products/bobo-foil/bobo-balloon-8-16inch/b15.jpeg",
     ],
   },
   {
@@ -190,21 +190,21 @@ export const products: Product[] = [
     description: "16 inch bobo balloon with 6 mini balloons",
     category: "bobo-foil-balloon",
     images: [
-      "/BoboFoil/BOBO BALLOON 8-16INCH/C.jpeg",
-      "/BoboFoil/BOBO BALLOON 8-16INCH/C2.jpeg",
-      "/BoboFoil/BOBO BALLOON 8-16INCH/C3.jpeg",
-      "/BoboFoil/BOBO BALLOON 8-16INCH/C4.jpeg",
-      "/BoboFoil/BOBO BALLOON 8-16INCH/C5.jpeg",
-      "/BoboFoil/BOBO BALLOON 8-16INCH/C6.jpeg",
-      "/BoboFoil/BOBO BALLOON 8-16INCH/C7.jpeg",
-      "/BoboFoil/BOBO BALLOON 8-16INCH/C8.jpeg",
-      "/BoboFoil/BOBO BALLOON 8-16INCH/C9.jpeg",
-      "/BoboFoil/BOBO BALLOON 8-16INCH/C10.jpeg",
-      "/BoboFoil/BOBO BALLOON 8-16INCH/C11.jpeg",
-      "/BoboFoil/BOBO BALLOON 8-16INCH/C12.jpeg",
-      "/BoboFoil/BOBO BALLOON 8-16INCH/C13.jpeg",
-      "/BoboFoil/BOBO BALLOON 8-16INCH/C14.jpeg",
-      "/BoboFoil/BOBO BALLOON 8-16INCH/C15.jpeg",
+      "/products/bobo-foil/bobo-balloon-8-16inch/c.jpeg",
+      "/products/bobo-foil/bobo-balloon-8-16inch/c2.jpeg",
+      "/products/bobo-foil/bobo-balloon-8-16inch/c3.jpeg",
+      "/products/bobo-foil/bobo-balloon-8-16inch/c4.jpeg",
+      "/products/bobo-foil/bobo-balloon-8-16inch/c5.jpeg",
+      "/products/bobo-foil/bobo-balloon-8-16inch/c6.jpeg",
+      "/products/bobo-foil/bobo-balloon-8-16inch/c7.jpeg",
+      "/products/bobo-foil/bobo-balloon-8-16inch/c8.jpeg",
+      "/products/bobo-foil/bobo-balloon-8-16inch/c9.jpeg",
+      "/products/bobo-foil/bobo-balloon-8-16inch/c10.jpeg",
+      "/products/bobo-foil/bobo-balloon-8-16inch/c11.jpeg",
+      "/products/bobo-foil/bobo-balloon-8-16inch/c12.jpeg",
+      "/products/bobo-foil/bobo-balloon-8-16inch/c13.jpeg",
+      "/products/bobo-foil/bobo-balloon-8-16inch/c14.jpeg",
+      "/products/bobo-foil/bobo-balloon-8-16inch/c15.jpeg",
     ],
   },
   {
@@ -213,7 +213,7 @@ export const products: Product[] = [
     price: "RM24.90 (with sticker) / RM20.90 (without sticker)",
     description: "18 inch bobo balloon with 6 mini balloons",
     category: "bobo-foil-balloon",
-    images: ["/BoboFoil/bobo balloon 18-20inch/D.jpeg", "/BoboFoil/bobo balloon 18-20inch/D2.jpeg"],
+    images: ["/products/bobo-foil/bobo-balloon-18-20inch/d.jpeg", "/products/bobo-foil/bobo-balloon-18-20inch/d2.jpeg"],
   },
   {
     id: "bobo-5",
@@ -222,11 +222,11 @@ export const products: Product[] = [
     description: "20 inch bobo balloon with 6 mini balloons",
     category: "bobo-foil-balloon",
     images: [
-      "/BoboFoil/bobo balloon 18-20inch/E.jpeg",
-      "/BoboFoil/bobo balloon 18-20inch/E2.jpeg",
-      "/BoboFoil/bobo balloon 18-20inch/E3.jpeg",
-      "/BoboFoil/bobo balloon 18-20inch/E4.jpeg",
-      "/BoboFoil/bobo balloon 18-20inch/E5.jpeg",
+      "/products/bobo-foil/bobo-balloon-18-20inch/e.jpeg",
+      "/products/bobo-foil/bobo-balloon-18-20inch/e2.jpeg",
+      "/products/bobo-foil/bobo-balloon-18-20inch/e3.jpeg",
+      "/products/bobo-foil/bobo-balloon-18-20inch/e4.jpeg",
+      "/products/bobo-foil/bobo-balloon-18-20inch/e5.jpeg",
     ],
   },
   {
@@ -235,7 +235,7 @@ export const products: Product[] = [
     price: "RM7.90 (with sticker) / RM2.90 (without sticker)",
     description: "18 inch foil balloon with 6 mini balloons",
     category: "bobo-foil-balloon",
-    images: ["/BoboFoil/foil balloon 10-18inch/F.jpeg", "/BoboFoil/foil balloon 10-18inch/F2.jpeg"],
+    images: ["/products/bobo-foil/foil-balloon-10-18inch/f.jpeg", "/products/bobo-foil/foil-balloon-10-18inch/f2.jpeg"],
   },
   {
     id: "foil-2",
@@ -243,7 +243,7 @@ export const products: Product[] = [
     price: "RM5.50 (with sticker) / RM2.50 (without sticker)",
     description: "10 inch foil balloon with 6 mini balloons",
     category: "bobo-foil-balloon",
-    images: ["/BoboFoil/foil balloon 10-18inch/G.jpeg", "/BoboFoil/foil balloon 10-18inch/G2.jpeg"],
+    images: ["/products/bobo-foil/foil-balloon-10-18inch/g.jpeg", "/products/bobo-foil/foil-balloon-10-18inch/g2.jpeg"],
   },
 
   // Money Bouquet Category (6 products)
@@ -253,7 +253,7 @@ export const products: Product[] = [
     price: "RM25.00-RM30.00",
     description: "Money pulling helium balloon arrangement",
     category: "money-bouquet",
-    images: ["/DuitTarikTerbangHeliumBobo/image/M.jpeg"],
+    images: ["/products/money-bouquet/m.jpeg"],
   },
   {
     id: "money-2",
@@ -261,7 +261,7 @@ export const products: Product[] = [
     price: "RM25.00-RM30.00",
     description: "Money pulling helium balloon arrangement",
     category: "money-bouquet",
-    images: ["/DuitTarikTerbangHeliumBobo/image/M2.jpeg"],
+    images: ["/products/money-bouquet/m2.jpeg"],
   },
   {
     id: "money-3",
@@ -269,7 +269,7 @@ export const products: Product[] = [
     price: "RM25.00-RM30.00",
     description: "Money pulling helium balloon arrangement",
     category: "money-bouquet",
-    images: ["/DuitTarikTerbangHeliumBobo/image/M3.jpeg"],
+    images: ["/products/money-bouquet/m3.jpeg"],
   },
   {
     id: "money-4",
@@ -277,7 +277,7 @@ export const products: Product[] = [
     price: "RM25.00-RM30.00",
     description: "Money pulling helium balloon arrangement",
     category: "money-bouquet",
-    images: ["/DuitTarikTerbangHeliumBobo/image/M4.jpeg"],
+    images: ["/products/money-bouquet/m4.jpeg"],
   },
   {
     id: "money-5",
@@ -285,7 +285,7 @@ export const products: Product[] = [
     price: "RM25.00-RM30.00",
     description: "Money pulling helium balloon arrangement",
     category: "money-bouquet",
-    images: ["/DuitTarikTerbangHeliumBobo/image/M5.jpeg"],
+    images: ["/products/money-bouquet/m5.jpeg"],
   },
   {
     id: "money-6",
@@ -293,7 +293,7 @@ export const products: Product[] = [
     price: "RM25.00-RM30.00",
     description: "Money pulling helium balloon arrangement",
     category: "money-bouquet",
-    images: ["/DuitTarikTerbangHeliumBobo/image/M6.jpeg"],
+    images: ["/products/money-bouquet/m6.jpeg"],
   },
 
   // Flower Bouquet Category (21 products)
@@ -303,7 +303,7 @@ export const products: Product[] = [
     price: "RM35.00-RM45.00",
     description: "Beautiful rose flower bouquet",
     category: "flower-bouquet",
-    images: ["/FlowerBouquet/flower/A.jpeg", "/FlowerBouquet/flower/A2.jpeg", "/FlowerBouquet/flower/A3.jpeg"],
+    images: ["/products/flower-bouquet/a.jpeg", "/products/flower-bouquet/a2.jpeg", "/products/flower-bouquet/a3.jpeg"],
   },
   {
     id: "flower-2",
@@ -311,7 +311,7 @@ export const products: Product[] = [
     price: "RM40.00-RM50.00",
     description: "Mixed flower bouquet arrangement",
     category: "flower-bouquet",
-    images: ["/FlowerBouquet/flower/B.jpeg", "/FlowerBouquet/flower/B2.jpeg"],
+    images: ["/products/flower-bouquet/b.jpeg", "/products/flower-bouquet/b2.jpeg"],
   },
   {
     id: "flower-3",
@@ -319,7 +319,7 @@ export const products: Product[] = [
     price: "RM45.00-RM55.00",
     description: "Elegant flower bouquet",
     category: "flower-bouquet",
-    images: ["/FlowerBouquet/flower/C.jpeg"],
+    images: ["/products/flower-bouquet/c.jpeg"],
   },
   {
     id: "flower-4",
@@ -327,7 +327,7 @@ export const products: Product[] = [
     price: "RM50.00-RM60.00",
     description: "Premium flower arrangement",
     category: "flower-bouquet",
-    images: ["/FlowerBouquet/flower/D.jpeg"],
+    images: ["/products/flower-bouquet/d.jpeg"],
   },
   {
     id: "flower-5",
@@ -335,7 +335,7 @@ export const products: Product[] = [
     price: "RM35.00-RM45.00",
     description: "Classic flower bouquet",
     category: "flower-bouquet",
-    images: ["/FlowerBouquet/flower/E.jpeg"],
+    images: ["/products/flower-bouquet/e.jpeg"],
   },
   {
     id: "flower-6",
@@ -343,7 +343,7 @@ export const products: Product[] = [
     price: "RM40.00-RM50.00",
     description: "Romantic flower arrangement",
     category: "flower-bouquet",
-    images: ["/FlowerBouquet/flower/F.jpeg"],
+    images: ["/products/flower-bouquet/f.jpeg"],
   },
   {
     id: "flower-7",
@@ -351,7 +351,7 @@ export const products: Product[] = [
     price: "RM55.00-RM65.00",
     description: "Deluxe flower bouquet",
     category: "flower-bouquet",
-    images: ["/FlowerBouquet/flower/G.jpeg"],
+    images: ["/products/flower-bouquet/g.jpeg"],
   },
   {
     id: "flower-8",
@@ -359,7 +359,7 @@ export const products: Product[] = [
     price: "RM35.00-RM45.00",
     description: "Spring flower arrangement",
     category: "flower-bouquet",
-    images: ["/FlowerBouquet/flower/H.jpeg"],
+    images: ["/products/flower-bouquet/h.jpeg"],
   },
   {
     id: "flower-9",
@@ -367,7 +367,7 @@ export const products: Product[] = [
     price: "RM40.00-RM50.00",
     description: "Summer flower bouquet",
     category: "flower-bouquet",
-    images: ["/FlowerBouquet/flower/I.jpeg"],
+    images: ["/products/flower-bouquet/i.jpeg"],
   },
   {
     id: "flower-10",
@@ -375,7 +375,7 @@ export const products: Product[] = [
     price: "RM45.00-RM55.00",
     description: "Autumn flower arrangement",
     category: "flower-bouquet",
-    images: ["/FlowerBouquet/flower/J.jpeg"],
+    images: ["/products/flower-bouquet/j.jpeg"],
   },
   {
     id: "flower-11",
@@ -383,7 +383,7 @@ export const products: Product[] = [
     price: "RM40.00-RM50.00",
     description: "Winter flower bouquet",
     category: "flower-bouquet",
-    images: ["/FlowerBouquet/flower/K.jpeg"],
+    images: ["/products/flower-bouquet/k.jpeg"],
   },
   {
     id: "flower-12",
@@ -391,7 +391,7 @@ export const products: Product[] = [
     price: "RM35.00-RM45.00",
     description: "Birthday flower arrangement",
     category: "flower-bouquet",
-    images: ["/FlowerBouquet/flower/L.jpeg"],
+    images: ["/products/flower-bouquet/l.jpeg"],
   },
   {
     id: "flower-13",
@@ -399,7 +399,7 @@ export const products: Product[] = [
     price: "RM50.00-RM60.00",
     description: "Anniversary flower bouquet",
     category: "flower-bouquet",
-    images: ["/FlowerBouquet/flower/M.jpeg"],
+    images: ["/products/flower-bouquet/m.jpeg"],
   },
   {
     id: "flower-14",
@@ -407,7 +407,7 @@ export const products: Product[] = [
     price: "RM45.00-RM55.00",
     description: "Congratulations flower arrangement",
     category: "flower-bouquet",
-    images: ["/FlowerBouquet/flower/N.jpeg"],
+    images: ["/products/flower-bouquet/n.jpeg"],
   },
   {
     id: "flower-15",
@@ -415,7 +415,7 @@ export const products: Product[] = [
     price: "RM40.00-RM50.00",
     description: "Sympathy flower bouquet",
     category: "flower-bouquet",
-    images: ["/FlowerBouquet/flower/O.jpeg"],
+    images: ["/products/flower-bouquet/o.jpeg"],
   },
   {
     id: "flower-16",
@@ -423,7 +423,7 @@ export const products: Product[] = [
     price: "RM60.00-RM80.00",
     description: "Wedding flower arrangement",
     category: "flower-bouquet",
-    images: ["/FlowerBouquet/flower/P.jpeg"],
+    images: ["/products/flower-bouquet/p.jpeg"],
   },
   {
     id: "flower-17",
@@ -431,7 +431,7 @@ export const products: Product[] = [
     price: "RM55.00-RM65.00",
     description: "Valentine's Day flower bouquet",
     category: "flower-bouquet",
-    images: ["/FlowerBouquet/flower/Q.jpeg"],
+    images: ["/products/flower-bouquet/q.jpeg"],
   },
   {
     id: "flower-18",
@@ -439,7 +439,7 @@ export const products: Product[] = [
     price: "RM45.00-RM55.00",
     description: "Mother's Day flower arrangement",
     category: "flower-bouquet",
-    images: ["/FlowerBouquet/flower/R.jpeg"],
+    images: ["/products/flower-bouquet/r.jpeg"],
   },
   {
     id: "flower-19",
@@ -447,7 +447,7 @@ export const products: Product[] = [
     price: "RM50.00-RM60.00",
     description: "Special occasion flower bouquet",
     category: "flower-bouquet",
-    images: ["/FlowerBouquet/flower/WhatsApp Image 2022-02-25 at 16.20.11.jpeg"],
+    images: ["/products/flower-bouquet/whatsapp-image-2022-02-25-at-16-20-11.jpeg"],
   },
 
   // Mini Bouquet Category (25+ products)
@@ -457,7 +457,7 @@ export const products: Product[] = [
     price: "RM15.00-RM20.00",
     description: "Small rose bouquet arrangement",
     category: "mini-bouquet",
-    images: ["/Mini bouquet/mini bouquet/A.jpeg"],
+    images: ["/products/mini-bouquet/a.jpeg"],
   },
   {
     id: "mini-2",
@@ -465,7 +465,7 @@ export const products: Product[] = [
     price: "RM18.00-RM25.00",
     description: "Small mixed flower bouquet",
     category: "mini-bouquet",
-    images: ["/Mini bouquet/mini bouquet/B.jpeg"],
+    images: ["/products/mini-bouquet/b.jpeg"],
   },
   {
     id: "mini-3",
@@ -473,7 +473,7 @@ export const products: Product[] = [
     price: "RM20.00-RM25.00",
     description: "Small elegant flower arrangement",
     category: "mini-bouquet",
-    images: ["/Mini bouquet/mini bouquet/C.jpeg"],
+    images: ["/products/mini-bouquet/c.jpeg"],
   },
   {
     id: "mini-4",
@@ -481,7 +481,7 @@ export const products: Product[] = [
     price: "RM15.00-RM20.00",
     description: "Small classic flower bouquet",
     category: "mini-bouquet",
-    images: ["/Mini bouquet/mini bouquet/D.jpeg"],
+    images: ["/products/mini-bouquet/d.jpeg"],
   },
   {
     id: "mini-5",
@@ -489,7 +489,7 @@ export const products: Product[] = [
     price: "RM18.00-RM23.00",
     description: "Small romantic flower arrangement",
     category: "mini-bouquet",
-    images: ["/Mini bouquet/mini bouquet/E.jpeg"],
+    images: ["/products/mini-bouquet/e.jpeg"],
   },
   {
     id: "mini-6",
@@ -497,7 +497,7 @@ export const products: Product[] = [
     price: "RM16.00-RM21.00",
     description: "Small spring flower bouquet",
     category: "mini-bouquet",
-    images: ["/Mini bouquet/mini bouquet/F.jpeg"],
+    images: ["/products/mini-bouquet/f.jpeg"],
   },
   {
     id: "mini-7",
@@ -505,7 +505,7 @@ export const products: Product[] = [
     price: "RM17.00-RM22.00",
     description: "Small summer flower arrangement",
     category: "mini-bouquet",
-    images: ["/Mini bouquet/mini bouquet/G.jpeg"],
+    images: ["/products/mini-bouquet/g.jpeg"],
   },
   {
     id: "mini-8",
@@ -513,7 +513,7 @@ export const products: Product[] = [
     price: "RM15.00-RM20.00",
     description: "Small birthday flower bouquet",
     category: "mini-bouquet",
-    images: ["/Mini bouquet/mini bouquet/H.jpeg"],
+    images: ["/products/mini-bouquet/h.jpeg"],
   },
   {
     id: "mini-9",
@@ -522,9 +522,9 @@ export const products: Product[] = [
     description: "Small anniversary flower arrangement",
     category: "mini-bouquet",
     images: [
-      "/Mini bouquet/mini bouquet/I.jpeg",
-      "/Mini bouquet/mini bouquet/I2.jpeg",
-      "/Mini bouquet/mini bouquet/I3.jpeg",
+      "/products/mini-bouquet/i.jpeg",
+      "/products/mini-bouquet/i2.jpeg",
+      "/products/mini-bouquet/i3.jpeg",
     ],
   },
 
@@ -536,11 +536,11 @@ export const products: Product[] = [
     description: "Bobo balloon with chocolate and flower gift box",
     category: "bobo-balloon-chocolate-flower-gift-box",
     images: [
-      "/BoboBalloonChocolate&FlowerGiftBox/bob cho 2/A.jpeg",
-      "/BoboBalloonChocolate&FlowerGiftBox/bob cho 2/A2.jpeg",
-      "/BoboBalloonChocolate&FlowerGiftBox/bob cho 2/A3.jpeg",
-      "/BoboBalloonChocolate&FlowerGiftBox/bob cho 2/A4.jpeg",
-      "/BoboBalloonChocolate&FlowerGiftBox/bob cho 2/A5.jpeg",
+      "/products/bobo-balloon-chocolate-flower-gift-box/bob-cho-2/a.jpeg",
+      "/products/bobo-balloon-chocolate-flower-gift-box/bob-cho-2/a2.jpeg",
+      "/products/bobo-balloon-chocolate-flower-gift-box/bob-cho-2/a3.jpeg",
+      "/products/bobo-balloon-chocolate-flower-gift-box/bob-cho-2/a4.jpeg",
+      "/products/bobo-balloon-chocolate-flower-gift-box/bob-cho-2/a5.jpeg",
     ],
   },
   {
@@ -550,11 +550,11 @@ export const products: Product[] = [
     description: "Premium bobo balloon with chocolate and flower gift box",
     category: "bobo-balloon-chocolate-flower-gift-box",
     images: [
-      "/BoboBalloonChocolate&FlowerGiftBox/bob cho 2/B.jpeg",
-      "/BoboBalloonChocolate&FlowerGiftBox/bob cho 2/B2.jpeg",
-      "/BoboBalloonChocolate&FlowerGiftBox/bob cho 2/B3.jpeg",
-      "/BoboBalloonChocolate&FlowerGiftBox/bob cho 2/B4.jpeg",
-      "/BoboBalloonChocolate&FlowerGiftBox/bob cho 2/B5.jpeg",
+      "/products/bobo-balloon-chocolate-flower-gift-box/bob-cho-2/b.jpeg",
+      "/products/bobo-balloon-chocolate-flower-gift-box/bob-cho-2/b2.jpeg",
+      "/products/bobo-balloon-chocolate-flower-gift-box/bob-cho-2/b3.jpeg",
+      "/products/bobo-balloon-chocolate-flower-gift-box/bob-cho-2/b4.jpeg",
+      "/products/bobo-balloon-chocolate-flower-gift-box/bob-cho-2/b5.jpeg",
     ],
   },
   {
@@ -564,8 +564,8 @@ export const products: Product[] = [
     description: "Bobo balloon gift box with assorted treats",
     category: "bobo-balloon-chocolate-flower-gift-box",
     images: [
-      "/BoboBalloonChocolate&FlowerGiftBox/bobo box/A.jpeg",
-      "/BoboBalloonChocolate&FlowerGiftBox/bobo box/A2.jpeg",
+      "/products/bobo-balloon-chocolate-flower-gift-box/bobo-box/a.jpeg",
+      "/products/bobo-balloon-chocolate-flower-gift-box/bobo-box/a2.jpeg",
     ],
   },
   {
@@ -574,7 +574,7 @@ export const products: Product[] = [
     price: "RM70.00-RM90.00",
     description: "Bobo balloon gift box with premium items",
     category: "bobo-balloon-chocolate-flower-gift-box",
-    images: ["/BoboBalloonChocolate&FlowerGiftBox/bobo box/B.jpeg"],
+    images: ["/products/bobo-balloon-chocolate-flower-gift-box/bobo-box/b.jpeg"],
   },
   {
     id: "bobo-box-3",
@@ -582,7 +582,7 @@ export const products: Product[] = [
     price: "RM65.00-RM85.00",
     description: "Bobo balloon gift box arrangement",
     category: "bobo-balloon-chocolate-flower-gift-box",
-    images: ["/BoboBalloonChocolate&FlowerGiftBox/bobo box/C.jpeg"],
+    images: ["/products/bobo-balloon-chocolate-flower-gift-box/bobo-box/c.jpeg"],
   },
   {
     id: "choco-box-1",
@@ -591,8 +591,8 @@ export const products: Product[] = [
     description: "Deluxe chocolate gift box with balloon",
     category: "bobo-balloon-chocolate-flower-gift-box",
     images: [
-      "/BoboBalloonChocolate&FlowerGiftBox/choco box 1/A.jpeg",
-      "/BoboBalloonChocolate&FlowerGiftBox/choco box 1/A2.jpeg",
+      "/products/bobo-balloon-chocolate-flower-gift-box/choco-box-1/a.jpeg",
+      "/products/bobo-balloon-chocolate-flower-gift-box/choco-box-1/a2.jpeg",
     ],
   },
   {
@@ -602,10 +602,10 @@ export const products: Product[] = [
     description: "Premium chocolate gift box with balloon arrangement",
     category: "bobo-balloon-chocolate-flower-gift-box",
     images: [
-      "/BoboBalloonChocolate&FlowerGiftBox/choco box 1/B.jpeg",
-      "/BoboBalloonChocolate&FlowerGiftBox/choco box 1/B2.jpeg",
-      "/BoboBalloonChocolate&FlowerGiftBox/choco box 1/B3.jpeg",
-      "/BoboBalloonChocolate&FlowerGiftBox/choco box 1/B4.jpeg",
+      "/products/bobo-balloon-chocolate-flower-gift-box/choco-box-1/b.jpeg",
+      "/products/bobo-balloon-chocolate-flower-gift-box/choco-box-1/b2.jpeg",
+      "/products/bobo-balloon-chocolate-flower-gift-box/choco-box-1/b3.jpeg",
+      "/products/bobo-balloon-chocolate-flower-gift-box/choco-box-1/b4.jpeg",
     ],
   },
 ]
