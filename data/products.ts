@@ -273,14 +273,14 @@ export const products: Product[] = [
     category: "money-bouquet",
     images: ["/products/money-bouquet/img-2.jpeg"],
   },
-  {
-    id: "money-3",
-    name: "MONEY PULLING BALLOON SET 3",
-    price: "RM25.00-RM30.00",
-    description: "Money pulling helium balloon arrangement",
-    category: "money-bouquet",
-    images: ["/products/money-bouquet/img-3.jpeg"],
-  },
+  // {
+  //   id: "money-3",
+  //   name: "MONEY PULLING BALLOON SET 3",
+  //   price: "RM25.00-RM30.00",
+  //   description: "Money pulling helium balloon arrangement",
+  //   category: "money-bouquet",
+  //   images: ["/products/money-bouquet/img-3.jpeg"],
+  // },
   {
     id: "money-4",
     name: "MONEY PULLING BALLOON SET 4",
