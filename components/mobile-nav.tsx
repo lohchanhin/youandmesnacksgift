@@ -50,7 +50,7 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
               产品展示
             </Link>
             <Link
-              href="#contact"
+              href="/contact"
               className="text-lg text-foreground hover:text-primary transition-colors py-2"
               onClick={handleClose}
             >

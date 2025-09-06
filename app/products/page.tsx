@@ -56,7 +56,7 @@ export default function ProductsPage() {
               <Link href="/products" className="text-red-600 font-medium">
                 产品展示
               </Link>
-              <Link href="#contact" className="text-gray-700 hover:text-red-600 transition-colors">
+              <Link href="/contact" className="text-gray-700 hover:text-red-600 transition-colors">
                 联系我们
               </Link>
             </nav>

@@ -1,11 +1,20 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Heart, Eye, Star, Phone, Mail, MapPin } from "lucide-react"
+import { Heart, Eye, Star, Phone, MapPin, Facebook, Instagram } from "lucide-react"
 import Link from "next/link"
 import { MobileNav } from "@/components/mobile-nav"
+import { products, categories } from "@/data/products"
+import Image from "next/image"
 
 export default function HomePage() {
+  const getCategoryPreview = (categoryId: string) => {
+    const categoryProducts = products.filter((p) => p.category === categoryId)
+    return categoryProducts.slice(0, 3) // Get first 3 products as preview
+  }
+
+  const featuredCategories = categories.filter((cat) => cat.id !== "all").slice(0, 11) // Show all 11 categories
+
   return (
     <div className="min-h-screen">
       {/* Header */}
@@ -22,7 +31,7 @@ export default function HomePage() {
               <Link href="/products" className="text-foreground hover:text-primary transition-colors">
                 产品展示
               </Link>
-              <Link href="#contact" className="text-foreground hover:text-primary transition-colors">
+              <Link href="/contact" className="text-foreground hover:text-primary transition-colors">
                 联系我们
               </Link>
             </nav>
@@ -56,7 +65,7 @@ export default function HomePage() {
               className="text-base sm:text-lg px-6 sm:px-8 h-12 sm:h-auto bg-transparent"
               asChild
             >
-              <Link href="#contact">联系我们</Link>
+              <Link href="/contact">联系我们</Link>
             </Button>
           </div>
         </div>
@@ -70,148 +79,50 @@ export default function HomePage() {
             <p className="text-muted-foreground text-base sm:text-lg">精选多样化的礼品系列</p>
           </div>
 
-          <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3 mb-8 sm:mb-12">
-            {/* Bobo Balloons & Chocolate Gift Boxes */}
-            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-4xl sm:text-5xl mb-2">🎈🍫</div>
-                  <h4 className="text-lg sm:text-xl font-heading font-bold text-foreground">气球巧克力礼盒</h4>
-                </div>
-              </div>
-              <CardContent className="p-4 sm:p-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <Badge variant="secondary">热销</Badge>
-                  <div className="flex items-center gap-1">
-                    <Star className="h-4 w-4 fill-accent text-accent" />
-                    <span className="text-sm text-muted-foreground">4.9分</span>
-                  </div>
-                </div>
-                <p className="text-muted-foreground mb-4 text-sm sm:text-base">
-                  气球与巧克力的完美结合，精美包装的礼盒系列
-                </p>
-                <Button asChild size="sm" className="w-full">
-                  <Link href="/products">查看详情</Link>
-                </Button>
-              </CardContent>
-            </Card>
+          <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mb-8 sm:mb-12">
+            {featuredCategories.map((category) => {
+              const previewProducts = getCategoryPreview(category.id)
+              const mainProduct = previewProducts[0]
 
-            {/* Bobo Foil Balloons */}
-            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="aspect-video bg-gradient-to-br from-accent/10 to-primary/10 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-4xl sm:text-5xl mb-2">🎈</div>
-                  <h4 className="text-lg sm:text-xl font-heading font-bold text-foreground">铝箔气球</h4>
-                </div>
-              </div>
-              <CardContent className="p-4 sm:p-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <Badge variant="secondary">精品</Badge>
-                  <div className="flex items-center gap-1">
-                    <Star className="h-4 w-4 fill-accent text-accent" />
-                    <span className="text-sm text-muted-foreground">4.8分</span>
+              return (
+                <Card key={category.id} className="overflow-hidden hover:shadow-lg transition-shadow">
+                  <div className="aspect-video bg-muted relative overflow-hidden">
+                    {mainProduct && mainProduct.images.length > 0 ? (
+                      <Image
+                        src={mainProduct.images[0] || "/placeholder.svg"}
+                        alt={category.name}
+                        fill
+                        className="object-contain bg-gray-50"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                      />
+                    ) : (
+                      <div className="flex items-center justify-center h-full">
+                        <div className="text-center">
+                          <div className="text-4xl sm:text-5xl mb-2">📦</div>
+                          <h4 className="text-lg sm:text-xl font-heading font-bold text-foreground">{category.name}</h4>
+                        </div>
+                      </div>
+                    )}
                   </div>
-                </div>
-                <p className="text-muted-foreground mb-4 text-sm sm:text-base">多种尺寸的铝箔气球，适合各种庆祝场合</p>
-                <Button asChild size="sm" className="w-full">
-                  <Link href="/products">查看详情</Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            {/* Helium Money Pull Balloons */}
-            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-4xl sm:text-5xl mb-2">💰🎈</div>
-                  <h4 className="text-lg sm:text-xl font-heading font-bold text-foreground">氦气球拉钱</h4>
-                </div>
-              </div>
-              <CardContent className="p-4 sm:p-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <Badge variant="secondary">创意</Badge>
-                  <div className="flex items-center gap-1">
-                    <Star className="h-4 w-4 fill-accent text-accent" />
-                    <span className="text-sm text-muted-foreground">4.7分</span>
-                  </div>
-                </div>
-                <p className="text-muted-foreground mb-4 text-sm sm:text-base">
-                  创意氦气球拉钱产品，惊喜满满的庆祝方式
-                </p>
-                <Button asChild size="sm" className="w-full">
-                  <Link href="/products">查看详情</Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            {/* Flower Bouquets */}
-            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="aspect-video bg-gradient-to-br from-accent/10 to-primary/10 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-4xl sm:text-5xl mb-2">💐</div>
-                  <h4 className="text-lg sm:text-xl font-heading font-bold text-foreground">花束系列</h4>
-                </div>
-              </div>
-              <CardContent className="p-4 sm:p-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <Badge variant="secondary">浪漫</Badge>
-                  <div className="flex items-center gap-1">
-                    <Star className="h-4 w-4 fill-accent text-accent" />
-                    <span className="text-sm text-muted-foreground">4.9分</span>
-                  </div>
-                </div>
-                <p className="text-muted-foreground mb-4 text-sm sm:text-base">精美花束系列，表达爱意的完美选择</p>
-                <Button asChild size="sm" className="w-full">
-                  <Link href="/products">查看详情</Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            {/* Helium Balloons */}
-            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-4xl sm:text-5xl mb-2">🎈</div>
-                  <h4 className="text-lg sm:text-xl font-heading font-bold text-foreground">氦气球系列</h4>
-                </div>
-              </div>
-              <CardContent className="p-4 sm:p-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <Badge variant="secondary">经典</Badge>
-                  <div className="flex items-center gap-1">
-                    <Star className="h-4 w-4 fill-accent text-accent" />
-                    <span className="text-sm text-muted-foreground">4.8分</span>
-                  </div>
-                </div>
-                <p className="text-muted-foreground mb-4 text-sm sm:text-base">经典氦气球系列，多种颜色和款式可选</p>
-                <Button asChild size="sm" className="w-full">
-                  <Link href="/products">查看详情</Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            {/* Mini Bouquets */}
-            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="aspect-video bg-gradient-to-br from-accent/10 to-primary/10 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-4xl sm:text-5xl mb-2">🌸</div>
-                  <h4 className="text-lg sm:text-xl font-heading font-bold text-foreground">迷你花束</h4>
-                </div>
-              </div>
-              <CardContent className="p-4 sm:p-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <Badge variant="secondary">精致</Badge>
-                  <div className="flex items-center gap-1">
-                    <Star className="h-4 w-4 fill-accent text-accent" />
-                    <span className="text-sm text-muted-foreground">4.7分</span>
-                  </div>
-                </div>
-                <p className="text-muted-foreground mb-4 text-sm sm:text-base">精致小巧的迷你花束，温馨贴心的小礼品</p>
-                <Button asChild size="sm" className="w-full">
-                  <Link href="/products">查看详情</Link>
-                </Button>
-              </CardContent>
-            </Card>
+                  <CardContent className="p-4 sm:p-6">
+                    <div className="flex items-center gap-2 mb-3">
+                      <Badge variant="secondary">{category.count}个产品</Badge>
+                      <div className="flex items-center gap-1">
+                        <Star className="h-4 w-4 fill-accent text-accent" />
+                        <span className="text-sm text-muted-foreground">4.8分</span>
+                      </div>
+                    </div>
+                    <h4 className="text-lg sm:text-xl font-heading font-bold text-foreground mb-2">{category.name}</h4>
+                    <p className="text-muted-foreground mb-4 text-sm sm:text-base">
+                      {mainProduct ? mainProduct.description : `精选${category.name}系列产品`}
+                    </p>
+                    <Button asChild size="sm" className="w-full">
+                      <Link href={`/products?category=${category.id}`}>查看详情</Link>
+                    </Button>
+                  </CardContent>
+                </Card>
+              )
+            })}
           </div>
         </div>
       </section>
@@ -261,9 +172,10 @@ export default function HomePage() {
                   ))}
                 </div>
                 <p className="text-muted-foreground mb-4 text-sm sm:text-base">
-                  "气球质量很好，包装精美，女朋友很喜欢！"
+                  "Sangat puas dengan kualiti balon dan coklat! Packaging cantik, anak saya suka sangat. Terima kasih
+                  You & Me!"
                 </p>
-                <p className="font-semibold text-foreground text-sm sm:text-base">- 小明</p>
+                <p className="font-semibold text-foreground text-sm sm:text-base">- Siti Aminah</p>
               </CardContent>
             </Card>
 
@@ -275,9 +187,9 @@ export default function HomePage() {
                   ))}
                 </div>
                 <p className="text-muted-foreground mb-4 text-sm sm:text-base">
-                  "巧克力很好吃，礼盒包装超级漂亮，送礼必选！"
+                  "老板服务很好，产品质量超棒！女儿生日买的气球巧克力礼盒，包装精美，价格合理。会再来的！"
                 </p>
-                <p className="font-semibold text-foreground text-sm sm:text-base">- 小红</p>
+                <p className="font-semibold text-foreground text-sm sm:text-base">- 陈太太</p>
               </CardContent>
             </Card>
 
@@ -289,9 +201,10 @@ export default function HomePage() {
                   ))}
                 </div>
                 <p className="text-muted-foreground mb-4 text-sm sm:text-base">
-                  "服务很好，送货及时，产品质量超出预期！"
+                  "Best place untuk beli hadiah! Bunga bouquet fresh, balloon quality bagus. Delivery pun on time.
+                  Highly recommended!"
                 </p>
-                <p className="font-semibold text-foreground text-sm sm:text-base">- 小李</p>
+                <p className="font-semibold text-foreground text-sm sm:text-base">- Ahmad Rahman</p>
               </CardContent>
             </Card>
           </div>
@@ -310,6 +223,22 @@ export default function HomePage() {
               <p className="text-muted-foreground mb-4 text-sm sm:text-base">
                 专业的礼品展示平台，展示多样化的精美礼品系列
               </p>
+              <div className="flex items-center gap-4">
+                <Link
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  aria-label="Facebook"
+                >
+                  <Facebook className="h-5 w-5" />
+                </Link>
+                <Link
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="h-5 w-5" />
+                </Link>
+              </div>
             </div>
 
             <div>
@@ -317,46 +246,56 @@ export default function HomePage() {
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-muted-foreground text-sm sm:text-base">
                   <Phone className="h-4 w-4 flex-shrink-0" />
-                  <span>+60 12-345 6789</span>
-                </div>
-                <div className="flex items-center gap-2 text-muted-foreground text-sm sm:text-base">
-                  <Mail className="h-4 w-4 flex-shrink-0" />
-                  <span>hello@youandmegifts.com</span>
+                  <span>018-313 7277</span>
                 </div>
                 <div className="flex items-center gap-2 text-muted-foreground text-sm sm:text-base">
                   <MapPin className="h-4 w-4 flex-shrink-0" />
-                  <span>马来西亚</span>
+                  <span>Semenyih, Selangor</span>
                 </div>
               </div>
             </div>
 
             <div>
-              <h5 className="font-heading font-semibold text-foreground mb-4 text-base sm:text-lg">产品分类</h5>
+              <h5 className="font-heading font-semibold text-foreground mb-4 text-base sm:text-lg">热门分类</h5>
               <div className="space-y-2">
                 <Link
-                  href="/products"
+                  href="/products?category=helium-balloon"
+                  className="block text-muted-foreground hover:text-primary transition-colors text-sm sm:text-base"
+                >
+                  氦气球系列
+                </Link>
+                <Link
+                  href="/products?category=bobo-balloon-chocolate-flower-gift-box"
                   className="block text-muted-foreground hover:text-primary transition-colors text-sm sm:text-base"
                 >
                   气球巧克力礼盒
                 </Link>
                 <Link
-                  href="/products"
+                  href="/products?category=flower-bouquet"
                   className="block text-muted-foreground hover:text-primary transition-colors text-sm sm:text-base"
                 >
                   花束系列
-                </Link>
-                <Link
-                  href="/products"
-                  className="block text-muted-foreground hover:text-primary transition-colors text-sm sm:text-base"
-                >
-                  氦气球系列
                 </Link>
               </div>
             </div>
           </div>
 
-          <div className="border-t border-border mt-6 sm:mt-8 pt-6 sm:pt-8 text-center">
-            <p className="text-muted-foreground text-sm sm:text-base">© 2024 You & Me Gifts. 保留所有权利。</p>
+          <div className="border-t border-border mt-6 sm:mt-8 pt-6 sm:pt-8">
+            <div className="text-center space-y-2">
+              <p className="text-muted-foreground text-sm sm:text-base">© 2024 You & Me Gifts. 保留所有权利。</p>
+              <p className="text-xs text-muted-foreground/70">
+                made by{" "}
+                <Link
+                  href="https://vertex-solution.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium hover:text-primary transition-colors underline decoration-dotted"
+                >
+                  vertex-solution-IT解决方案专家
+                </Link>{" "}
+                •{" "}       
+              </p>
+            </div>
           </div>
         </div>
       </footer>
