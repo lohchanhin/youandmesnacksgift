@@ -8,12 +8,13 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { MobileNav } from "@/components/mobile-nav"
-import { Menu, Phone, MapPin, Facebook, Instagram } from "lucide-react"
+import { Menu, Phone, MapPin, Facebook, Instagram, ChevronLeft, ChevronRight } from "lucide-react"
 import { products, categories } from "@/data/products"
 
 export default function ProductsPage() {
   const [selectedCategory, setSelectedCategory] = useState<string>("all")
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   const filteredProducts = useMemo(() => {
     if (selectedCategory === "all") {
@@ -21,6 +22,18 @@ export default function ProductsPage() {
     }
     return products.filter((product) => product.category === selectedCategory)
   }, [selectedCategory])
+
+  const nextImage = (totalImages: number) => {
+    setCurrentImageIndex((prev) => (prev + 1) % totalImages)
+  }
+
+  const prevImage = (totalImages: number) => {
+    setCurrentImageIndex((prev) => (prev - 1 + totalImages) % totalImages)
+  }
+
+  const resetImageIndex = () => {
+    setCurrentImageIndex(0)
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-red-50 to-pink-50">
@@ -99,43 +112,91 @@ export default function ProductsPage() {
                     alt={product.name}
                     width={300}
                     height={300}
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-64 object-contain bg-gray-50 group-hover:scale-105 transition-transform duration-300"
                   />
                   <Badge className="absolute top-2 left-2 bg-red-600 text-xs">
                     {categories.find((cat) => cat.id === product.category)?.name || product.category}
                   </Badge>
+                  {product.images.length > 1 && (
+                    <Badge className="absolute top-2 right-2 bg-black/70 text-white text-xs">
+                      {product.images.length} 张图片
+                    </Badge>
+                  )}
                 </div>
                 <div className="p-4">
                   <h3 className="font-semibold text-lg text-gray-900 mb-2">{product.name}</h3>
                   <p className="text-gray-600 text-sm mb-3 line-clamp-2">{product.description}</p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-2xl font-bold text-red-600">{product.price}</span>
+                  <div className="space-y-3">
+                    <span className="text-2xl font-bold text-red-600 block">{product.price}</span>
                     <Dialog>
                       <DialogTrigger asChild>
-                        <Button size="sm" className="bg-red-600 hover:bg-red-700">
+                        <Button size="sm" className="bg-red-600 hover:bg-red-700 w-full" onClick={resetImageIndex}>
                           查看详情
                         </Button>
                       </DialogTrigger>
-                      <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+                      <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
                         <DialogHeader>
                           <DialogTitle>{product.name}</DialogTitle>
                         </DialogHeader>
-                        <div className="space-y-4">
-                          <div className="grid grid-cols-2 gap-4">
-                            {product.images.slice(0, 4).map((img, index) => (
+                        <div className="space-y-6">
+                          <div className="relative">
+                            <div className="aspect-square max-w-2xl mx-auto relative overflow-hidden rounded-lg bg-gray-100">
                               <Image
-                                key={index}
-                                src={img || "/placeholder.svg"}
-                                alt={`${product.name} ${index + 1}`}
-                                width={200}
-                                height={200}
-                                className="w-full h-48 object-cover rounded-lg"
+                                src={product.images[currentImageIndex] || "/placeholder.svg"}
+                                alt={`${product.name} ${currentImageIndex + 1}`}
+                                fill
+                                className="object-contain"
                               />
-                            ))}
+
+                              {product.images.length > 1 && (
+                                <>
+                                  <button
+                                    onClick={() => prevImage(product.images.length)}
+                                    className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-colors"
+                                  >
+                                    <ChevronLeft className="h-5 w-5" />
+                                  </button>
+                                  <button
+                                    onClick={() => nextImage(product.images.length)}
+                                    className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-colors"
+                                  >
+                                    <ChevronRight className="h-5 w-5" />
+                                  </button>
+                                </>
+                              )}
+
+                              {product.images.length > 1 && (
+                                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/70 text-white px-3 py-1 rounded-full text-sm">
+                                  {currentImageIndex + 1} / {product.images.length}
+                                </div>
+                              )}
+                            </div>
+
+                            {product.images.length > 1 && (
+                              <div className="flex gap-2 mt-4 justify-center overflow-x-auto pb-2">
+                                {product.images.map((img, index) => (
+                                  <button
+                                    key={index}
+                                    onClick={() => setCurrentImageIndex(index)}
+                                    className={`flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden border-2 transition-colors ${
+                                      index === currentImageIndex
+                                        ? "border-red-600"
+                                        : "border-gray-200 hover:border-gray-300"
+                                    }`}
+                                  >
+                                    <Image
+                                      src={img || "/placeholder.svg"}
+                                      alt={`${product.name} thumbnail ${index + 1}`}
+                                      width={64}
+                                      height={64}
+                                      className="w-full h-full object-contain bg-gray-50"
+                                    />
+                                  </button>
+                                ))}
+                              </div>
+                            )}
                           </div>
-                          {product.images.length > 4 && (
-                            <p className="text-sm text-gray-500 text-center">+{product.images.length - 4} 更多图片</p>
-                          )}
+
                           <div>
                             <p className="text-gray-600 mb-2">{product.description}</p>
                             <p className="text-2xl font-bold text-red-600 mb-4">{product.price}</p>
