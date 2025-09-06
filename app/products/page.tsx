@@ -8,12 +8,11 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { MobileNav } from "@/components/mobile-nav"
-import { Menu, Phone, MapPin, Facebook, Instagram, ChevronLeft, ChevronRight } from "lucide-react"
+import { Phone, MapPin, Facebook, Instagram, ChevronLeft, ChevronRight } from "lucide-react"
 import { products, categories } from "@/data/products"
 
 export default function ProductsPage() {
   const [selectedCategory, setSelectedCategory] = useState<string>("all")
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   const filteredProducts = useMemo(() => {
@@ -62,18 +61,10 @@ export default function ProductsPage() {
             </nav>
 
             {/* Mobile menu button */}
-            <button
-              onClick={() => setMobileMenuOpen(true)}
-              className="md:hidden p-2 rounded-md text-gray-700 hover:text-red-600 hover:bg-gray-100"
-            >
-              <Menu className="h-6 w-6" />
-            </button>
+            <MobileNav />
           </div>
         </div>
       </header>
-
-      {/* Mobile Navigation */}
-      <MobileNav isOpen={mobileMenuOpen} onClose={() => setMobileMenuOpen(false)} />
 
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
