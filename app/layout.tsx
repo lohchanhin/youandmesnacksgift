@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { Suspense } from "react";
 import { I18nProvider } from "@/lib/i18n";
 import { getLocale, getMessages } from "next-intl/server";
+import defaultMessages from "@/messages/en.json";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import "./globals.css";
 
@@ -36,14 +37,30 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const locale = await getLocale();
-
-  let messages: Record<string, unknown> = {};
+  let locale = "en";
   try {
-    messages = await getMessages();
+    locale = await getLocale();
   } catch (err) {
-    console.error("⚠️ Failed to load messages, fallback to empty:", err);
-    messages = {};
+    console.error("⚠️ Failed to detect locale, fallback to 'en':", err);
+  }
+
+  let messages: Record<string, unknown> = defaultMessages;
+  try {
+    messages = await getMessages({ locale });
+  } catch (err) {
+    console.error(
+      `⚠️ Failed to load messages for locale "${locale}", falling back to default:`,
+      err,
+    );
+    try {
+      messages = await getMessages({ locale: "en" });
+    } catch (err2) {
+      console.error(
+        "⚠️ Failed to load default messages, using bundled fallback:",
+        err2,
+      );
+      messages = defaultMessages;
+    }
   }
 
   return (
