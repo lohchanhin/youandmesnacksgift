@@ -5,9 +5,9 @@ import { useLocale } from 'next-intl'
 import { Button } from '@/components/ui/button'
 
 const languages = [
-  { code: 'ms', label: 'ms' },
-  { code: 'en', label: 'en' },
-  { code: 'zh-CN', label: 'zh-CN' },
+  { code: 'en', label: 'English' },
+  { code: 'ms', label: 'Malay' },
+  { code: 'zh-CN', label: '中文' },
 ]
 
 export function LanguageSwitcher() {
