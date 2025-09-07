@@ -22,6 +22,9 @@ export const metadata: Metadata = {
   description:
     "Premium gift boxes, Bobo balloons, and chocolate arrangements for all your special occasions. From RM6.90 to RM120.",
   generator: "v0.app",
+  icons: {
+    icon: "/favicon-32x32.png",
+  },
 }
 
 export default function RootLayout({
@@ -31,6 +34,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon-32x32.png" />
+      </head>
       <body className={`font-sans ${spaceGrotesk.variable} ${dmSans.variable} antialiased`}>
         <Suspense fallback={null}>{children}</Suspense>
         <Analytics />
