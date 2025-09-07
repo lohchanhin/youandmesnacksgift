@@ -10,8 +10,10 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { MobileNav } from "@/components/mobile-nav"
 import { Phone, MapPin, Facebook, Instagram, ChevronLeft, ChevronRight } from "lucide-react"
 import { products, categories } from "@/data/products"
+import { useTranslations } from "next-intl"
 
 export default function ProductsPage() {
+  const t = useTranslations("common")
   const [selectedCategory, setSelectedCategory] = useState<string>("all")
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
@@ -50,13 +52,13 @@ export default function ProductsPage() {
             {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-8">
               <Link href="/" className="text-gray-700 hover:text-red-600 transition-colors">
-                首页
+                {t("nav.home")}
               </Link>
               <Link href="/products" className="text-red-600 font-medium">
-                产品展示
+                {t("nav.products")}
               </Link>
               <Link href="/contact" className="text-gray-700 hover:text-red-600 transition-colors">
-                联系我们
+                {t("nav.contact")}
               </Link>
             </nav>
 
@@ -70,9 +72,9 @@ export default function ProductsPage() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Page Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">产品展示</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">{t("products.heroTitle")}</h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            浏览我们精心挑选的礼品系列，从气球装饰到精美花束，为您的特殊时刻增添美好回忆
+            {t("products.heroSubtitle")}
           </p>
         </div>
 
@@ -122,7 +124,7 @@ export default function ProductsPage() {
                     <Dialog>
                       <DialogTrigger asChild>
                         <Button size="sm" className="bg-red-600 hover:bg-red-700 w-full" onClick={resetImageIndex}>
-                          查看详情
+                          {t("products.viewDetails")}
                         </Button>
                       </DialogTrigger>
                       <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
@@ -211,15 +213,15 @@ export default function ProductsPage() {
 
         {filteredProducts.length === 0 && (
           <div className="text-center py-12">
-            <p className="text-gray-500 text-lg">该分类暂无产品，敬请期待！</p>
+            <p className="text-gray-500 text-lg">{t("products.noProducts")}</p>
           </div>
         )}
 
         {/* Contact Section */}
         <section id="contact" className="bg-white rounded-2xl shadow-lg p-8 mb-8">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">联系我们</h2>
-            <p className="text-gray-600">对我们的产品感兴趣？欢迎通过以下方式联系我们咨询和订购</p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">{t("products.contactTitle")}</h2>
+            <p className="text-gray-600">{t("products.contactSubtitle")}</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -251,7 +253,7 @@ export default function ProductsPage() {
               <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-3">
                 <MapPin className="h-6 w-6 text-red-600" />
               </div>
-              <h3 className="font-semibold text-gray-900 mb-2">地址</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">{t("contact.addressTitle")}</h3>
               <p className="text-gray-600">Semenyih, Selangor</p>
             </div>
           </div>

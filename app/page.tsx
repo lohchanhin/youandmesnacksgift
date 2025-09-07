@@ -6,8 +6,11 @@ import Link from "next/link"
 import { MobileNav } from "@/components/mobile-nav"
 import { products, categories } from "@/data/products"
 import Image from "next/image"
+import { useTranslations } from "next-intl"
 
 export default function HomePage() {
+  const t = useTranslations("common")
+
   const getCategoryPreview = (categoryId: string) => {
     const categoryProducts = products.filter((p) => p.category === categoryId)
     return categoryProducts.slice(0, 3) // Get first 3 products as preview
@@ -35,10 +38,10 @@ export default function HomePage() {
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center gap-6">
               <Link href="/products" className="text-foreground hover:text-primary transition-colors">
-                产品展示
+                {t("nav.products")}
               </Link>
               <Link href="/contact" className="text-foreground hover:text-primary transition-colors">
-                联系我们
+                {t("nav.contact")}
               </Link>
             </nav>
 
@@ -52,17 +55,17 @@ export default function HomePage() {
       <section className="bg-gradient-to-br from-card to-background py-12 sm:py-20">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl sm:text-5xl md:text-6xl font-heading font-bold text-foreground mb-4 sm:mb-6 text-balance">
-            精美礼品展示
-            <span className="text-primary block">让每个时刻更特别</span>
+            {t("home.heroTitle")}
+            <span className="text-primary block">{t("home.heroSubtitle")}</span>
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-2xl mx-auto text-pretty px-4">
-            气球、花束、巧克力礼盒等多样化产品，为您的庆祝时刻增添温馨与甜蜜
+            {t("home.heroDescription")}
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
             <Button size="lg" className="text-base sm:text-lg px-6 sm:px-8 h-12 sm:h-auto" asChild>
               <Link href="/products">
                 <Eye className="h-4 w-4 sm:h-5 sm:w-5 mr-2" />
-                浏览产品
+                {t("home.cta.viewProducts")}
               </Link>
             </Button>
             <Button
@@ -71,7 +74,7 @@ export default function HomePage() {
               className="text-base sm:text-lg px-6 sm:px-8 h-12 sm:h-auto bg-transparent"
               asChild
             >
-              <Link href="/contact">联系我们</Link>
+              <Link href="/contact">{t("home.cta.contactUs")}</Link>
             </Button>
           </div>
         </div>
@@ -81,8 +84,12 @@ export default function HomePage() {
       <section id="products" className="py-12 sm:py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8 sm:mb-12">
-            <h3 className="text-2xl sm:text-3xl font-heading font-bold text-foreground mb-3 sm:mb-4">产品展示</h3>
-            <p className="text-muted-foreground text-base sm:text-lg">精选多样化的礼品系列</p>
+            <h3 className="text-2xl sm:text-3xl font-heading font-bold text-foreground mb-3 sm:mb-4">
+              {t("nav.products")}
+            </h3>
+            <p className="text-muted-foreground text-base sm:text-lg">
+              {t("home.featuredSubtitle")}
+            </p>
           </div>
 
           <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mb-8 sm:mb-12">
@@ -112,18 +119,24 @@ export default function HomePage() {
                   </div>
                   <CardContent className="p-4 sm:p-6">
                     <div className="flex items-center gap-2 mb-3">
-                      <Badge variant="secondary">{category.count}个产品</Badge>
+                      <Badge variant="secondary">
+                        {t("home.productCount", { count: category.count })}
+                      </Badge>
                       <div className="flex items-center gap-1">
                         <Star className="h-4 w-4 fill-accent text-accent" />
-                        <span className="text-sm text-muted-foreground">4.8分</span>
+                        <span className="text-sm text-muted-foreground">
+                          {t("home.ratingValue", { rating: 4.8 })}
+                        </span>
                       </div>
                     </div>
                     <h4 className="text-lg sm:text-xl font-heading font-bold text-foreground mb-2">{category.name}</h4>
                     <p className="text-muted-foreground mb-4 text-sm sm:text-base">
-                      {mainProduct ? mainProduct.description : `精选${category.name}系列产品`}
+                      {mainProduct
+                        ? mainProduct.description
+                        : t("home.categoryDescription", { name: category.name })}
                     </p>
                     <Button asChild size="sm" className="w-full">
-                      <Link href={`/products?category=${category.id}`}>查看详情</Link>
+                      <Link href={`/products?category=${category.id}`}>{t("home.viewDetails")}</Link>
                     </Button>
                   </CardContent>
                 </Card>
@@ -137,25 +150,41 @@ export default function HomePage() {
       <section className="py-12 sm:py-16 bg-muted">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8 sm:mb-12">
-            <h3 className="text-2xl sm:text-3xl font-heading font-bold text-foreground mb-3 sm:mb-4">庆祝时刻</h3>
-            <p className="text-muted-foreground text-base sm:text-lg">为每个特殊场合找到完美的礼品</p>
+            <h3 className="text-2xl sm:text-3xl font-heading font-bold text-foreground mb-3 sm:mb-4">
+              {t("home.celebration.title")}
+            </h3>
+            <p className="text-muted-foreground text-base sm:text-lg">
+              {t("home.celebration.subtitle")}
+            </p>
           </div>
 
           <div className="grid gap-6 sm:gap-6 md:grid-cols-3">
             <div className="text-center">
               <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">🎂</div>
-              <h4 className="text-lg sm:text-xl font-heading font-semibold mb-2">生日庆祝</h4>
-              <p className="text-muted-foreground text-sm sm:text-base">让生日更加特别难忘</p>
+              <h4 className="text-lg sm:text-xl font-heading font-semibold mb-2">
+                {t("home.celebration.birthday.title")}
+              </h4>
+              <p className="text-muted-foreground text-sm sm:text-base">
+                {t("home.celebration.birthday.desc")}
+              </p>
             </div>
             <div className="text-center">
               <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">💕</div>
-              <h4 className="text-lg sm:text-xl font-heading font-semibold mb-2">浪漫纪念</h4>
-              <p className="text-muted-foreground text-sm sm:text-base">表达爱意的完美选择</p>
+              <h4 className="text-lg sm:text-xl font-heading font-semibold mb-2">
+                {t("home.celebration.romantic.title")}
+              </h4>
+              <p className="text-muted-foreground text-sm sm:text-base">
+                {t("home.celebration.romantic.desc")}
+              </p>
             </div>
             <div className="text-center">
               <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">🎉</div>
-              <h4 className="text-lg sm:text-xl font-heading font-semibold mb-2">节日庆典</h4>
-              <p className="text-muted-foreground text-sm sm:text-base">为节日增添欢乐气氛</p>
+              <h4 className="text-lg sm:text-xl font-heading font-semibold mb-2">
+                {t("home.celebration.festival.title")}
+              </h4>
+              <p className="text-muted-foreground text-sm sm:text-base">
+                {t("home.celebration.festival.desc")}
+              </p>
             </div>
           </div>
         </div>
