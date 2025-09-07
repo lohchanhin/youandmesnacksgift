@@ -1,33 +1,41 @@
-'use client'
+"use client"
 
-import { Link, usePathname } from '@/lib/navigation'
-import { useLocale } from 'next-intl'
-import { Button } from '@/components/ui/button'
+import { useLanguage } from "@/contexts/language-context"
+import { Button } from "@/components/ui/button"
+import { Globe } from "lucide-react"
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 
 const languages = [
-  { code: 'en', label: 'English' },
-  { code: 'ms', label: 'Malay' },
-  { code: 'zh-CN', label: '中文' },
-]
+  { code: "zh-CN", name: "简体中文", flag: "🇨🇳" },
+  { code: "en", name: "English", flag: "🇺🇸" },
+  { code: "ms", name: "Bahasa Malaysia", flag: "🇲🇾" },
+] as const
 
 export function LanguageSwitcher() {
-  const locale = useLocale()
-  const pathname = usePathname()
+  const { language, setLanguage } = useLanguage()
+
+  const currentLanguage = languages.find((lang) => lang.code === language)
 
   return (
-    <div className="flex gap-2">
-      {languages.map(({ code, label }) => (
-        <Button
-          key={code}
-          variant={locale === code ? 'default' : 'outline'}
-          size="sm"
-          asChild
-        >
-          <Link href={pathname} locale={code}>
-            {label}
-          </Link>
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button variant="ghost" size="sm" className="gap-2">
+          <Globe className="h-4 w-4" />
+          <span className="hidden sm:inline">{currentLanguage?.flag}</span>
         </Button>
-      ))}
-    </div>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end">
+        {languages.map((lang) => (
+          <DropdownMenuItem
+            key={lang.code}
+            onClick={() => setLanguage(lang.code)}
+            className={language === lang.code ? "bg-gray-100" : ""}
+          >
+            <span className="mr-2">{lang.flag}</span>
+            {lang.name}
+          </DropdownMenuItem>
+        ))}
+      </DropdownMenuContent>
+    </DropdownMenu>
   )
 }

@@ -10,12 +10,13 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { MobileNav } from "@/components/mobile-nav"
 import { Phone, MapPin, Facebook, Instagram, ChevronLeft, ChevronRight } from "lucide-react"
 import { products, categories } from "@/data/products"
-import { useTranslations } from "next-intl"
+import { useLanguage } from "@/contexts/language-context"
+import { LanguageSwitcher } from "@/components/language-switcher"
 
 export default function ProductsPage() {
-  const t = useTranslations("common")
   const [selectedCategory, setSelectedCategory] = useState<string>("all")
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
+  const { language, t } = useLanguage()
 
   const filteredProducts = useMemo(() => {
     if (selectedCategory === "all") {
@@ -43,14 +44,18 @@ export default function ProductsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link href="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-sm">Y&M</span>
-              </div>
-              <span className="font-bold text-xl text-gray-900">You & Me Gifts</span>
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-h70OaRMbb9Tj2nOBrOY3Cf2AfmwfaF.png"
+                alt="You & Me Gifts Logo"
+                width={120}
+                height={60}
+                className="h-8 w-auto"
+                priority
+              />
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex space-x-8">
+            <nav className="hidden md:flex items-center space-x-8">
               <Link href="/" className="text-gray-700 hover:text-red-600 transition-colors">
                 {t("nav.home")}
               </Link>
@@ -60,6 +65,7 @@ export default function ProductsPage() {
               <Link href="/contact" className="text-gray-700 hover:text-red-600 transition-colors">
                 {t("nav.contact")}
               </Link>
+              <LanguageSwitcher />
             </nav>
 
             {/* Mobile menu button */}
@@ -72,10 +78,8 @@ export default function ProductsPage() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Page Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">{t("products.heroTitle")}</h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            {t("products.heroSubtitle")}
-          </p>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">{t("products.title")}</h1>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">{t("products.subtitle")}</p>
         </div>
 
         {/* Category Filter */}
@@ -88,7 +92,7 @@ export default function ProductsPage() {
                 onClick={() => setSelectedCategory(category.id)}
                 className="mb-2 text-xs sm:text-sm"
               >
-                {category.name} ({category.count})
+                {category.name[language]} ({category.count})
               </Button>
             ))}
           </div>
@@ -102,23 +106,23 @@ export default function ProductsPage() {
                 <div className="relative overflow-hidden rounded-t-lg">
                   <Image
                     src={product.images[0] || "/placeholder.svg"}
-                    alt={product.name}
+                    alt={product.name[language]}
                     width={300}
                     height={300}
                     className="w-full h-64 object-contain bg-gray-50 group-hover:scale-105 transition-transform duration-300"
                   />
                   <Badge className="absolute top-2 left-2 bg-red-600 text-xs">
-                    {categories.find((cat) => cat.id === product.category)?.name || product.category}
+                    {categories.find((cat) => cat.id === product.category)?.name[language] || product.category}
                   </Badge>
                   {product.images.length > 1 && (
                     <Badge className="absolute top-2 right-2 bg-black/70 text-white text-xs">
-                      {product.images.length} 张图片
+                      {product.images.length} {t("products.images")}
                     </Badge>
                   )}
                 </div>
                 <div className="p-4">
-                  <h3 className="font-semibold text-lg text-gray-900 mb-2">{product.name}</h3>
-                  <p className="text-gray-600 text-sm mb-3 line-clamp-2">{product.description}</p>
+                  <h3 className="font-semibold text-lg text-gray-900 mb-2">{product.name[language]}</h3>
+                  <p className="text-gray-600 text-sm mb-3 line-clamp-2">{product.description[language]}</p>
                   <div className="space-y-3">
                     <span className="text-2xl font-bold text-red-600 block">{product.price}</span>
                     <Dialog>
@@ -129,14 +133,14 @@ export default function ProductsPage() {
                       </DialogTrigger>
                       <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
                         <DialogHeader>
-                          <DialogTitle>{product.name}</DialogTitle>
+                          <DialogTitle>{product.name[language]}</DialogTitle>
                         </DialogHeader>
                         <div className="space-y-6">
                           <div className="relative">
                             <div className="aspect-square max-w-2xl mx-auto relative overflow-hidden rounded-lg bg-gray-100">
                               <Image
                                 src={product.images[currentImageIndex] || "/placeholder.svg"}
-                                alt={`${product.name} ${currentImageIndex + 1}`}
+                                alt={`${product.name[language]} ${currentImageIndex + 1}`}
                                 fill
                                 className="object-contain"
                               />
@@ -179,7 +183,7 @@ export default function ProductsPage() {
                                   >
                                     <Image
                                       src={img || "/placeholder.svg"}
-                                      alt={`${product.name} thumbnail ${index + 1}`}
+                                      alt={`${product.name[language]} thumbnail ${index + 1}`}
                                       width={64}
                                       height={64}
                                       className="w-full h-full object-contain bg-gray-50"
@@ -191,14 +195,15 @@ export default function ProductsPage() {
                           </div>
 
                           <div>
-                            <p className="text-gray-600 mb-2">{product.description}</p>
+                            <p className="text-gray-600 mb-2">{product.description[language]}</p>
                             <p className="text-2xl font-bold text-red-600 mb-4">{product.price}</p>
                             <Badge className="bg-red-100 text-red-800">
-                              {categories.find((cat) => cat.id === product.category)?.name || product.category}
+                              {categories.find((cat) => cat.id === product.category)?.name[language] ||
+                                product.category}
                             </Badge>
                           </div>
                           <div className="text-sm text-gray-500">
-                            <p>如需订购此产品，请通过以下方式联系我们：</p>
+                            <p>{t("products.contactInfo")}</p>
                             <p className="mt-2">WhatsApp: +60 18-313 7277</p>
                           </div>
                         </div>
@@ -220,8 +225,8 @@ export default function ProductsPage() {
         {/* Contact Section */}
         <section id="contact" className="bg-white rounded-2xl shadow-lg p-8 mb-8">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">{t("products.contactTitle")}</h2>
-            <p className="text-gray-600">{t("products.contactSubtitle")}</p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">{t("contact.title")}</h2>
+            <p className="text-gray-600">{t("contact.subtitle")}</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -253,7 +258,7 @@ export default function ProductsPage() {
               <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-3">
                 <MapPin className="h-6 w-6 text-red-600" />
               </div>
-              <h3 className="font-semibold text-gray-900 mb-2">{t("contact.addressTitle")}</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">{t("contact.address")}</h3>
               <p className="text-gray-600">Semenyih, Selangor</p>
             </div>
           </div>
@@ -263,7 +268,7 @@ export default function ProductsPage() {
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p>&copy; 2024 You & Me Gifts. 版权所有.</p>
+          <p>{t("footer.copyright")}</p>
         </div>
       </footer>
     </div>
