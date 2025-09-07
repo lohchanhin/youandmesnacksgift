@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import { I18nProvider } from "@/lib/i18n"
 import { getLocale } from "next-intl/server"
+import { LanguageSwitcher } from "@/components/language-switcher"
 import "./globals.css"
 
 const spaceGrotesk = Space_Grotesk({
@@ -49,6 +50,9 @@ export default async function RootLayout({
       </head>
       <body className={`font-sans ${spaceGrotesk.variable} ${dmSans.variable} antialiased`}>
         <I18nProvider locale={locale}>
+          <div className="p-4">
+            <LanguageSwitcher />
+          </div>
           <Suspense fallback={null}>{children}</Suspense>
           <Analytics />
         </I18nProvider>
