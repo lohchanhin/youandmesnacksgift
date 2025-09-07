@@ -11,10 +11,55 @@
     "cta": {
       "viewProducts": "View Products",
       "contactUs": "Contact Us"
+    },
+    "featuredSubtitle": "A curated variety of gifts",
+    "productCount": "{count} products",
+    "ratingValue": "Rated {rating}",
+    "categoryDescription": "Selected {name} products",
+    "viewDetails": "View Details",
+    "celebration": {
+      "title": "Celebration Moments",
+      "subtitle": "Find the perfect gift for every special occasion",
+      "birthday": {
+        "title": "Birthday Celebration",
+        "desc": "Make birthdays extra special"
+      },
+      "romantic": {
+        "title": "Romantic Moments",
+        "desc": "Perfect for expressing love"
+      },
+      "festival": {
+        "title": "Festive Events",
+        "desc": "Add joy to the holidays"
+      }
     }
   },
   "contact": {
-    "title": "Contact Us",
-    "subtitle": "Visit our store or reach us through the following methods"
+    "heroTitle": "Contact Us",
+    "heroSubtitle": "Visit our store or reach us through the following methods",
+    "infoTitle": "Contact Information",
+    "phoneTitle": "Phone",
+    "phoneButton": "Call Now",
+    "whatsappTitle": "WhatsApp",
+    "whatsappDesc": "Quick inquiries and orders",
+    "whatsappButton": "WhatsApp Us",
+    "addressTitle": "Store Address",
+    "hoursTitle": "Business Hours",
+    "hoursWeekday": "Mon-Sat: 9:00 AM - 7:00 PM",
+    "hoursSunday": "Sun: 10:00 AM - 6:00 PM",
+    "storeTitle": "Store Showcase",
+    "storeDesc": "Our store displays various balloons, bouquets and gifts. Visit us to experience our quality products and service.",
+    "locationTitle": "Store Location",
+    "ctaTitle": "Ready to shop?",
+    "ctaDesc": "Browse our products or contact us for more information",
+    "ctaWhatsapp": "WhatsApp Inquiry"
+  },
+  "products": {
+    "heroTitle": "Products",
+    "heroSubtitle": "Browse our curated selection of gifts, from balloon decorations to beautiful bouquets, to enhance your special moments",
+    "noProducts": "No products in this category yet. Stay tuned!",
+    "contactTitle": "Contact Us",
+    "contactSubtitle": "Interested in our products? Contact us via the following methods for inquiries and orders",
+    "viewDetails": "View Details"
   }
 }
