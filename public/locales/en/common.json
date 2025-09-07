@@ -1,0 +1,20 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "contact": "Contact Us"
+  },
+  "home": {
+    "heroTitle": "Exquisite Gift Showcase",
+    "heroSubtitle": "Make Every Moment Special",
+    "heroDescription": "Balloons, bouquets, chocolate gift boxes and more to add warmth and sweetness to your celebrations",
+    "cta": {
+      "viewProducts": "View Products",
+      "contactUs": "Contact Us"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Visit our store or reach us through the following methods"
+  }
+}
