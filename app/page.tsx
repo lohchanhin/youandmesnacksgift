@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Heart, Eye, Star, Phone, MapPin, Facebook, Instagram } from "lucide-react"
+import { Eye, Star, Phone, MapPin, Facebook, Instagram } from "lucide-react"
 import Link from "next/link"
 import { MobileNav } from "@/components/mobile-nav"
 import { products, categories } from "@/data/products"
@@ -22,8 +22,14 @@ export default function HomePage() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <Heart className="h-6 w-6 sm:h-8 sm:w-8 text-primary" />
-              <h1 className="text-lg sm:text-2xl font-heading font-bold text-foreground">You & Me Gifts</h1>
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-h70OaRMbb9Tj2nOBrOY3Cf2AfmwfaF.png"
+                alt="You & Me Gifts Logo"
+                width={120}
+                height={60}
+                className="h-10 w-auto sm:h-12"
+                priority
+              />
             </div>
 
             {/* Desktop Navigation */}
@@ -217,8 +223,13 @@ export default function HomePage() {
           <div className="grid gap-6 sm:gap-8 md:grid-cols-3">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <Heart className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
-                <h4 className="text-lg sm:text-xl font-heading font-bold text-foreground">You & Me Gifts</h4>
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-h70OaRMbb9Tj2nOBrOY3Cf2AfmwfaF.png"
+                  alt="You & Me Gifts Logo"
+                  width={80}
+                  height={40}
+                  className="h-6 w-auto sm:h-8"
+                />
               </div>
               <p className="text-muted-foreground mb-4 text-sm sm:text-base">
                 专业的礼品展示平台，展示多样化的精美礼品系列
@@ -293,7 +304,7 @@ export default function HomePage() {
                 >
                   vertex-solution-IT解决方案专家
                 </Link>{" "}
-                •{" "}       
+                •{" "}
               </p>
             </div>
           </div>
