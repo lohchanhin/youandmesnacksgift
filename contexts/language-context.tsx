@@ -213,20 +213,27 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [language, setLanguage] = useState<Language>("zh-CN")
 
   useEffect(() => {
+    console.log("[v0] LanguageProvider mounted")
     const saved = localStorage.getItem("language") as Language
+    console.log("[v0] Saved language from localStorage:", saved)
     if (saved && ["zh-CN", "en", "ms"].includes(saved)) {
       setLanguage(saved)
+      console.log("[v0] Language set to:", saved)
     }
   }, [])
 
   const handleSetLanguage = (lang: Language) => {
+    console.log("[v0] Language change requested:", lang)
     setLanguage(lang)
     localStorage.setItem("language", lang)
+    console.log("[v0] Language updated and saved to localStorage:", lang)
   }
 
   const t = (key: string): string => {
     return translations[language][key] || key
   }
+
+  console.log("[v0] LanguageProvider rendering with language:", language)
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage: handleSetLanguage, t }}>

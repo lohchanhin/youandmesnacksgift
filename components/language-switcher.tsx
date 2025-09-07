@@ -14,7 +14,14 @@ const languages = [
 export function LanguageSwitcher() {
   const { language, setLanguage } = useLanguage()
 
+  console.log("[v0] LanguageSwitcher rendering with language:", language)
+
   const currentLanguage = languages.find((lang) => lang.code === language)
+
+  const handleLanguageChange = (langCode: string) => {
+    console.log("[v0] Language switcher clicked:", langCode)
+    setLanguage(langCode as any)
+  }
 
   return (
     <DropdownMenu>
@@ -28,7 +35,7 @@ export function LanguageSwitcher() {
         {languages.map((lang) => (
           <DropdownMenuItem
             key={lang.code}
-            onClick={() => setLanguage(lang.code)}
+            onClick={() => handleLanguageChange(lang.code)}
             className={language === lang.code ? "bg-gray-100" : ""}
           >
             <span className="mr-2">{lang.flag}</span>
