@@ -1,7 +1,7 @@
 'use client'
 
-import Link from 'next-intl/link'
-import { useLocale, usePathname } from 'next-intl/client'
+import { Link, usePathname } from '@/lib/navigation'
+import { useLocale } from 'next-intl'
 import { Button } from '@/components/ui/button'
 
 const languages = [
