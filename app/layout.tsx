@@ -51,9 +51,9 @@ export default async function RootLayout({
       </head>
       <body className={`font-sans ${spaceGrotesk.variable} ${dmSans.variable} antialiased`}>
         <I18nProvider locale={locale} messages={messages}>
-          <div className="p-4">
+          <nav className="p-4 border-b">
             <LanguageSwitcher />
-          </div>
+          </nav>
           <Suspense fallback={null}>{children}</Suspense>
           <Analytics />
         </I18nProvider>
