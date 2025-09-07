@@ -1,0 +1,13 @@
+{
+  "common": {
+    "nav": {
+      "home": "首页",
+      "products": "产品",
+      "contact": "联系我们"
+    },
+    "home": {
+      "heroTitle": "发现独特礼品",
+      "heroSubtitle": "为挚爱送上惊喜"
+    }
+  }
+}

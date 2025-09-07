@@ -1,0 +1,13 @@
+{
+  "common": {
+    "nav": {
+      "home": "Laman Utama",
+      "products": "Produk",
+      "contact": "Hubungi"
+    },
+    "home": {
+      "heroTitle": "Temui Hadiah Unik",
+      "heroSubtitle": "Gembirakan Orang Tersayang"
+    }
+  }
+}

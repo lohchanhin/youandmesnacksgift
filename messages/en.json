@@ -1,0 +1,13 @@
+{
+  "common": {
+    "nav": {
+      "home": "Home",
+      "products": "Products",
+      "contact": "Contact"
+    },
+    "home": {
+      "heroTitle": "Discover Unique Gifts",
+      "heroSubtitle": "Delight Your Loved Ones"
+    }
+  }
+}
