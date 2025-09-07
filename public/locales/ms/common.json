@@ -1,0 +1,20 @@
+{
+  "nav": {
+    "home": "Laman Utama",
+    "products": "Produk",
+    "contact": "Hubungi Kami"
+  },
+  "home": {
+    "heroTitle": "Pameran Hadiah Menarik",
+    "heroSubtitle": "Jadikan Setiap Detik Lebih Istimewa",
+    "heroDescription": "Belon, sejambak bunga, kotak hadiah coklat dan banyak lagi menambah kehangatan dan kemanisan pada sambutan anda",
+    "cta": {
+      "viewProducts": "Lihat Produk",
+      "contactUs": "Hubungi Kami"
+    }
+  },
+  "contact": {
+    "title": "Hubungi Kami",
+    "subtitle": "Kunjungi kedai kami atau hubungi kami melalui cara berikut"
+  }
+}
