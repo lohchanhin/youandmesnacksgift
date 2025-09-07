@@ -21,6 +21,13 @@ export const metadata: Metadata = {
   title: "You & Me Gifts - Bobo Balloons & Chocolate Gift Boxes",
   description:
     "Premium gift boxes, Bobo balloons, and chocolate arrangements for all your special occasions. From RM6.90 to RM120.",
+  keywords: [
+    "bobo 氣球",
+    "巧克力禮盒",
+    "花束禮品",
+    "畢業禮物",
+    "零食禮盒",
+  ],
   generator: "v0.app",
 }
 
