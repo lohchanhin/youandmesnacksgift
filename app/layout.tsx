@@ -3,6 +3,8 @@ import type { Metadata } from "next"
 import { Space_Grotesk, DM_Sans } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
+import { I18nProvider } from "@/lib/i18n"
+import { getLocale } from "next-intl/server"
 import "./globals.css"
 
 const spaceGrotesk = Space_Grotesk({
@@ -34,19 +36,22 @@ export const metadata: Metadata = {
   },
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const locale = await getLocale()
   return (
-    <html lang="en">
+    <html lang={locale}>
       <head>
         <link rel="icon" href="/favicon-32x32.png" />
       </head>
       <body className={`font-sans ${spaceGrotesk.variable} ${dmSans.variable} antialiased`}>
-        <Suspense fallback={null}>{children}</Suspense>
-        <Analytics />
+        <I18nProvider locale={locale}>
+          <Suspense fallback={null}>{children}</Suspense>
+          <Analytics />
+        </I18nProvider>
       </body>
     </html>
   )
