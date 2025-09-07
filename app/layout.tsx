@@ -4,7 +4,7 @@ import { Space_Grotesk, DM_Sans } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import { I18nProvider } from "@/lib/i18n"
-import { getLocale } from "next-intl/server"
+import { getLocale, getMessages } from "next-intl/server"
 import { LanguageSwitcher } from "@/components/language-switcher"
 import "./globals.css"
 
@@ -43,13 +43,14 @@ export default async function RootLayout({
   children: React.ReactNode
 }>) {
   const locale = await getLocale()
+  const messages = await getMessages()
   return (
     <html lang={locale}>
       <head>
         <link rel="icon" href="/favicon-32x32.png" />
       </head>
       <body className={`font-sans ${spaceGrotesk.variable} ${dmSans.variable} antialiased`}>
-        <I18nProvider locale={locale}>
+        <I18nProvider locale={locale} messages={messages}>
           <div className="p-4">
             <LanguageSwitcher />
           </div>
