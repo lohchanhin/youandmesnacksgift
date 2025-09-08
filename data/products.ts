@@ -900,6 +900,70 @@ export const products: Product[] = [
     category: "flower-bouquet",
     images: ["/products/flower-bouquet/whatsapp-image-2022-02-25-at-16-20-11.jpeg"],
   },
+  {
+    id: "flower-19",
+    name: {
+      "zh-CN": "母亲节花束",
+      en: "Mother's Day Bouquet",
+      ms: "Buket Bunga Hari Ibu",
+    },
+    price: "RM45.00-RM55.00",
+    description: {
+      "zh-CN": "母亲节特别花束",
+      en: "Special Mother's Day bouquet",
+      ms: "Buket bunga istimewa Hari Ibu",
+    },
+    category: "flower-bouquet",
+    images: ["/products/flower-bouquet/k.jpeg"],
+  },
+  {
+    id: "flower-20",
+    name: {
+      "zh-CN": "父亲节花束",
+      en: "Father's Day Bouquet",
+      ms: "Buket Bunga Hari Bapa",
+    },
+    price: "RM40.00-RM50.00",
+    description: {
+      "zh-CN": "父亲节特别花束",
+      en: "Special Father's Day bouquet",
+      ms: "Buket bunga istimewa Hari Bapa",
+    },
+    category: "flower-bouquet",
+    images: ["/products/flower-bouquet/s.jpeg"],
+  },
+  {
+    id: "flower-21",
+    name: {
+      "zh-CN": "感谢花束",
+      en: "Thank You Bouquet",
+      ms: "Buket Bunga Terima Kasih",
+    },
+    price: "RM35.00-RM45.00",
+    description: {
+      "zh-CN": "表达感谢的花束",
+      en: "Bouquet to express gratitude",
+      ms: "Buket bunga untuk menyatakan terima kasih",
+    },
+    category: "flower-bouquet",
+    images: ["/products/flower-bouquet/t.jpeg"],
+  },
+  {
+    id: "flower-22",
+    name: {
+      "zh-CN": "节日花束",
+      en: "Holiday Bouquet",
+      ms: "Buket Bunga Cuti",
+    },
+    price: "RM50.00-RM60.00",
+    description: {
+      "zh-CN": "节日庆祝花束",
+      en: "Holiday celebration bouquet",
+      ms: "Buket bunga sambutan cuti",
+    },
+    category: "flower-bouquet",
+    images: ["/products/flower-bouquet/whatsapp-image-2022-02-25-at-16-20-11-1-.jpeg"],
+  },
 
   // Mini Bouquet Category (expanded to include all existing images)
   {
@@ -1021,6 +1085,70 @@ export const products: Product[] = [
     },
     category: "mini-bouquet",
     images: ["/products/mini-bouquet/g.jpeg"],
+  },
+  {
+    id: "mini-8",
+    name: {
+      "zh-CN": "迷你秋季花束H",
+      en: "Mini Autumn Bouquet H",
+      ms: "Buket Bunga Musim Luruh Mini H",
+    },
+    price: "RM19.00-RM24.00",
+    description: {
+      "zh-CN": "小秋季花束排列",
+      en: "Arrangement of mini autumn bouquet",
+      ms: "Penataan buket bunga musim luruh mini",
+    },
+    category: "mini-bouquet",
+    images: ["/products/mini-bouquet/h.jpeg"],
+  },
+  {
+    id: "mini-9",
+    name: {
+      "zh-CN": "迷你冬季花束I",
+      en: "Mini Winter Bouquet I",
+      ms: "Buket Bunga Musim Sejuk Mini I",
+    },
+    price: "RM20.00-RM25.00",
+    description: {
+      "zh-CN": "小冬季花束排列",
+      en: "Arrangement of mini winter bouquet",
+      ms: "Penataan buket bunga musim sejuk mini",
+    },
+    category: "mini-bouquet",
+    images: ["/products/mini-bouquet/i.jpeg"],
+  },
+  {
+    id: "mini-10",
+    name: {
+      "zh-CN": "迷你生日花束",
+      en: "Mini Birthday Bouquet",
+      ms: "Buket Bunga Hari Jadi Mini",
+    },
+    price: "RM16.00-RM21.00",
+    description: {
+      "zh-CN": "小生日花束排列",
+      en: "Arrangement of mini birthday bouquet",
+      ms: "Penataan buket bunga hari jadi mini",
+    },
+    category: "mini-bouquet",
+    images: ["/products/mini-bouquet/i2.jpeg"],
+  },
+  {
+    id: "mini-11",
+    name: {
+      "zh-CN": "迷你周年花束",
+      en: "Mini Anniversary Bouquet",
+      ms: "Buket Bunga Ulang Tahun Mini",
+    },
+    price: "RM18.00-RM23.00",
+    description: {
+      "zh-CN": "小周年花束排列",
+      en: "Arrangement of mini anniversary bouquet",
+      ms: "Penataan buket bunga ulang tahun mini",
+    },
+    category: "mini-bouquet",
+    images: ["/products/mini-bouquet/i3.jpeg"],
   },
 
   // Bobo Balloon Chocolate & Flower Gift Box Category (expanded to include all existing images)
