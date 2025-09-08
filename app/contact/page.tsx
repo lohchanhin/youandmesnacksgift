@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Phone, MapPin, Clock, MessageCircle } from "lucide-react"
+import { Phone, MapPin, Clock, MessageCircle, Facebook, Instagram } from "lucide-react"
 import Link from "next/link"
 import { MobileNav } from "@/components/mobile-nav"
 import { LanguageSwitcher } from "@/components/language-switcher"
@@ -204,6 +204,101 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+      <footer id="footer" className="bg-card py-8 sm:py-12">
+        <div className="container mx-auto px-4">
+          <div className="grid gap-6 sm:gap-8 md:grid-cols-3">
+            <div>
+              <div className="flex items-center gap-2 mb-4">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-h70OaRMbb9Tj2nOBrOY3Cf2AfmwfaF.png"
+                  alt="You & Me Gifts Logo"
+                  width={80}
+                  height={40}
+                  className="h-6 w-auto sm:h-8"
+                />
+              </div>
+              <p className="text-muted-foreground mb-4 text-sm sm:text-base">{t("footer.description")}</p>
+              <div className="flex items-center gap-4">
+                <Link
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  aria-label="Facebook"
+                >
+                  <Facebook className="h-5 w-5" />
+                </Link>
+                <Link
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="h-5 w-5" />
+                </Link>
+              </div>
+            </div>
+
+            <div>
+              <h5 className="font-heading font-semibold text-foreground mb-4 text-base sm:text-lg">
+                {t("footer.contact")}
+              </h5>
+              <div className="space-y-2">
+                <div className="flex items-center gap-2 text-muted-foreground text-sm sm:text-base">
+                  <Phone className="h-4 w-4 flex-shrink-0" />
+                  <span>018-313 7277</span>
+                </div>
+                <div className="flex items-center gap-2 text-muted-foreground text-sm sm:text-base">
+                  <MapPin className="h-4 w-4 flex-shrink-0" />
+                  <span>Semenyih, Selangor</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h5 className="font-heading font-semibold text-foreground mb-4 text-base sm:text-lg">
+                {t("footer.popularCategories")}
+              </h5>
+              <div className="space-y-2">
+                <Link
+                  href="/products?category=helium-balloon"
+                  className="block text-muted-foreground hover:text-primary transition-colors text-sm sm:text-base"
+                >
+                  {t("footer.heliumBalloons")}
+                </Link>
+                <Link
+                  href="/products?category=bobo-balloon-chocolate-flower-gift-box"
+                  className="block text-muted-foreground hover:text-primary transition-colors text-sm sm:text-base"
+                >
+                  {t("footer.chocolateGiftBox")}
+                </Link>
+                <Link
+                  href="/products?category=flower-bouquet"
+                  className="block text-muted-foreground hover:text-primary transition-colors text-sm sm:text-base"
+                >
+                  {t("footer.flowerBouquet")}
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="border-t border-border mt-6 sm:mt-8 pt-6 sm:pt-8">
+            <div className="text-center space-y-2">
+              <p className="text-muted-foreground text-sm sm:text-base">{t("footer.copyright")}</p>
+              <p className="text-xs text-muted-foreground/70">
+                made by{" "}
+                <Link
+                  href="https://vertex-solution.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium hover:text-primary transition-colors underline decoration-dotted"
+                >
+                  vertex-solution-IT解决方案专家
+                </Link>{" "}
+                •{" "}
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }
