@@ -88,7 +88,7 @@ const translations = {
     "footer.heliumBalloons": "氦气球", // Added missing footer.heliumBalloons key
     "footer.chocolateGiftBox": "巧克力礼盒", // Added missing footer.chocolateGiftBox key
     "footer.flowerBouquet": "花束", // Added missing footer.flowerBouquet key
-    "footer.copyright": "© 2024 You & Me Gifts. 版权所有。", // Added missing footer.copyright key
+    "footer.copyright": "© 2025 You & Me Gifts. 版权所有。", // Added missing footer.copyright key
     "footer.rights": "版权所有",
     "footer.madeBy": "vertex-solution-IT解决方案专家 制作",
   },
@@ -171,7 +171,7 @@ const translations = {
     "footer.heliumBalloons": "Helium Balloons", // Added missing footer.heliumBalloons key
     "footer.chocolateGiftBox": "Chocolate Gift Box", // Added missing footer.chocolateGiftBox key
     "footer.flowerBouquet": "Flower Bouquet", // Added missing footer.flowerBouquet key
-    "footer.copyright": "© 2024 You & Me Gifts. All rights reserved.", // Added missing footer.copyright key
+    "footer.copyright": "© 2025 You & Me Gifts. All rights reserved.", // Added missing footer.copyright key
     "footer.rights": "All rights reserved",
     "footer.madeBy": "Made by vertex-solution-IT Solutions Expert",
   },
@@ -254,7 +254,7 @@ const translations = {
     "footer.heliumBalloons": "Belon Helium", // Added missing footer.heliumBalloons key
     "footer.chocolateGiftBox": "Kotak Hadiah Coklat", // Added missing footer.chocolateGiftBox key
     "footer.flowerBouquet": "Jambangan Bunga", // Added missing footer.flowerBouquet key
-    "footer.copyright": "© 2024 You & Me Gifts. Hak cipta terpelihara.", // Added missing footer.copyright key
+    "footer.copyright": "© 2025 You & Me Gifts. Hak cipta terpelihara.", // Added missing footer.copyright key
     "footer.rights": "Hak cipta terpelihara",
     "footer.madeBy": "Dibuat oleh vertex-solution-Pakar Penyelesaian IT",
   },
