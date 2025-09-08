@@ -39,7 +39,7 @@ export function ProductImageGallery({ images, productName }: ProductImageGallery
             <Button
               variant="outline"
               size="sm"
-              className="absolute left-2 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-transparent"
+              className="absolute left-2 top-1/2 -translate-y-1/2 md:opacity-0 md:group-hover:opacity-100 transition-opacity bg-white/90 backdrop-blur-sm shadow-lg"
               onClick={prevImage}
             >
               <ChevronLeft className="h-4 w-4" />
@@ -47,7 +47,7 @@ export function ProductImageGallery({ images, productName }: ProductImageGallery
             <Button
               variant="outline"
               size="sm"
-              className="absolute right-2 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-transparent"
+              className="absolute right-2 top-1/2 -translate-y-1/2 md:opacity-0 md:group-hover:opacity-100 transition-opacity bg-white/90 backdrop-blur-sm shadow-lg"
               onClick={nextImage}
             >
               <ChevronRight className="h-4 w-4" />
@@ -61,19 +61,39 @@ export function ProductImageGallery({ images, productName }: ProductImageGallery
             <Button
               variant="outline"
               size="sm"
-              className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity bg-transparent"
+              className="absolute top-2 right-2 md:opacity-0 md:group-hover:opacity-100 transition-opacity bg-white/90 backdrop-blur-sm shadow-lg"
             >
               <ZoomIn className="h-4 w-4" />
             </Button>
           </DialogTrigger>
-          <DialogContent className="max-w-4xl">
-            <div className="relative aspect-square">
+          <DialogContent className="max-w-[95vw] max-h-[95vh] w-full h-full md:max-w-4xl md:h-auto">
+            <div className="relative w-full h-full md:aspect-square">
               <Image
                 src={images[currentImage] || "/placeholder.svg"}
                 alt={`${productName} - 放大图片`}
                 fill
-                className="object-cover rounded-lg"
+                className="object-contain rounded-lg"
               />
+              {images.length > 1 && (
+                <>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm shadow-lg"
+                    onClick={prevImage}
+                  >
+                    <ChevronLeft className="h-4 w-4" />
+                  </Button>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm shadow-lg"
+                    onClick={nextImage}
+                  >
+                    <ChevronRight className="h-4 w-4" />
+                  </Button>
+                </>
+              )}
             </div>
           </DialogContent>
         </Dialog>
