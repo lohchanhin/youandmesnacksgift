@@ -120,7 +120,7 @@ export default function ContactPage() {
                     <div>
                       <h4 className="font-semibold text-foreground mb-2">营业时间</h4>
                       <div className="text-muted-foreground space-y-1">
-                        <p>周一至周六: 9:00 AM - 6:00 PM</p>
+                        <p>周一至周六: 10:00 AM - 7:00 PM</p>
                         <p>周日: 休息</p>
                       </div>
                     </div>
