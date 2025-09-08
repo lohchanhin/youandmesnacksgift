@@ -66,20 +66,23 @@ export function ProductImageGallery({ images, productName }: ProductImageGallery
               <ZoomIn className="h-4 w-4" />
             </Button>
           </DialogTrigger>
-          <DialogContent className="max-w-[95vw] max-h-[95vh] w-full h-full md:max-w-4xl md:h-auto">
-            <div className="relative w-full h-full md:aspect-square">
-              <Image
-                src={images[currentImage] || "/placeholder.svg"}
-                alt={`${productName} - 放大图片`}
-                fill
-                className="object-contain rounded-lg"
-              />
+          <DialogContent className="max-w-[90vw] max-h-[90vh] w-auto h-auto p-2 sm:p-6">
+            <div className="relative w-full max-w-[85vw] max-h-[80vh] mx-auto">
+              <div className="relative w-full h-0 pb-[100%]">
+                <Image
+                  src={images[currentImage] || "/placeholder.svg"}
+                  alt={`${productName} - 放大图片`}
+                  fill
+                  className="object-contain rounded-lg"
+                  sizes="(max-width: 768px) 85vw, (max-width: 1200px) 70vw, 60vw"
+                />
+              </div>
               {images.length > 1 && (
                 <>
                   <Button
                     variant="outline"
                     size="sm"
-                    className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm shadow-lg"
+                    className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm shadow-lg z-10"
                     onClick={prevImage}
                   >
                     <ChevronLeft className="h-4 w-4" />
@@ -87,7 +90,7 @@ export function ProductImageGallery({ images, productName }: ProductImageGallery
                   <Button
                     variant="outline"
                     size="sm"
-                    className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm shadow-lg"
+                    className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm shadow-lg z-10"
                     onClick={nextImage}
                   >
                     <ChevronRight className="h-4 w-4" />

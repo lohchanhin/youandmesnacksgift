@@ -478,139 +478,6 @@ export const products: Product[] = [
     ],
   },
 
-  // Zero Snack Chocolate Category
-  {
-    id: "zero-snack-chocolate-1",
-    name: {
-      "zh-CN": "零食巧克力套装",
-      en: "Zero Snack Chocolate Set",
-      ms: "Set Coklat Snek Sifar",
-    },
-    price: "N/A",
-    description: {
-      "zh-CN": "零食和巧克力花束套装",
-      en: "Snack and chocolate bouquet set",
-      ms: "Set buket snek dan coklat",
-    },
-    category: "zero-snack-chocolate",
-    images: [
-      "/products/zero-snack-chocolate/img-1.jpeg",
-      "/products/zero-snack-chocolate/img-2.jpeg",
-      "/products/zero-snack-chocolate/img-3.jpeg",
-      "/products/zero-snack-chocolate/img-4.jpeg",
-      "/products/zero-snack-chocolate/img-5.jpeg",
-      "/products/zero-snack-chocolate/img-6.jpeg",
-      "/products/zero-snack-chocolate/img-7.jpeg",
-      "/products/zero-snack-chocolate/img-8.jpeg",
-      "/products/zero-snack-chocolate/img-9.jpeg",
-      "/products/zero-snack-chocolate/img-10.jpeg",
-      "/products/zero-snack-chocolate/img-11.jpeg",
-      "/products/zero-snack-chocolate/img-12.jpeg",
-      "/products/zero-snack-chocolate/img-13.jpeg",
-      "/products/zero-snack-chocolate/img-14.jpeg",
-      "/products/zero-snack-chocolate/img-15.jpeg",
-      "/products/zero-snack-chocolate/img-16.jpeg",
-      "/products/zero-snack-chocolate/img-17.jpeg",
-      "/products/zero-snack-chocolate/img-18.jpeg",
-      "/products/zero-snack-chocolate/img-19.jpeg",
-      "/products/zero-snack-chocolate/img-20.jpeg",
-      "/products/zero-snack-chocolate/img-21.jpeg",
-      "/products/zero-snack-chocolate/img-22.jpeg",
-      "/products/zero-snack-chocolate/img-23.jpeg",
-      "/products/zero-snack-chocolate/img-24.jpeg",
-      "/products/zero-snack-chocolate/img-25.jpeg",
-      "/products/zero-snack-chocolate/img-26.jpeg",
-      "/products/zero-snack-chocolate/img-27.jpeg",
-      "/products/zero-snack-chocolate/img-28.jpeg",
-      "/products/zero-snack-chocolate/img-29.jpeg",
-      "/products/zero-snack-chocolate/img-30.jpeg",
-      "/products/zero-snack-chocolate/img-31.jpeg",
-      "/products/zero-snack-chocolate/img-32.jpeg",
-      "/products/zero-snack-chocolate/img-33.jpeg",
-      "/products/zero-snack-chocolate/img-34.jpeg",
-      "/products/zero-snack-chocolate/img-35.jpeg",
-      "/products/zero-snack-chocolate/img-36.jpeg",
-    ],
-  },
-
-  // Mini Chocolate Flower Gift Box Category
-  {
-    id: "mini-choco-gift-1",
-    name: {
-      "zh-CN": "迷你巧克力花礼品盒套装",
-      en: "Mini Chocolate Flower Gift Box Set",
-      ms: "Set Kotak Hadiah Bunga Coklat Mini",
-    },
-    price: "N/A",
-    description: {
-      "zh-CN": "迷你巧克力花礼品盒套装",
-      en: "Mini chocolate flower gift box set",
-      ms: "Set kotak hadiah bunga coklat mini",
-    },
-    category: "mini-chocolate-flower-gift-box",
-    images: [
-      "/products/mini-chocolate-flower-gift-box/img-1.jpeg",
-      "/products/mini-chocolate-flower-gift-box/img-2.jpeg",
-      "/products/mini-chocolate-flower-gift-box/img-3.jpeg",
-      "/products/mini-chocolate-flower-gift-box/img-4.jpeg",
-      "/products/mini-chocolate-flower-gift-box/img-5.jpeg",
-      "/products/mini-chocolate-flower-gift-box/img-6.jpeg",
-      "/products/mini-chocolate-flower-gift-box/img-7.jpeg",
-      "/products/mini-chocolate-flower-gift-box/img-8.jpeg",
-      "/products/mini-chocolate-flower-gift-box/img-9.jpeg",
-      "/products/mini-chocolate-flower-gift-box/img-10.jpeg",
-      "/products/mini-chocolate-flower-gift-box/img-11.jpeg",
-      "/products/mini-chocolate-flower-gift-box/img-12.jpeg",
-      "/products/mini-chocolate-flower-gift-box/img-13.jpeg",
-      "/products/mini-chocolate-flower-gift-box/img-14.jpeg",
-      "/products/mini-chocolate-flower-gift-box/img-15.jpeg",
-      "/products/mini-chocolate-flower-gift-box/img-16.jpeg",
-      "/products/mini-chocolate-flower-gift-box/img-17.jpeg",
-      "/products/mini-chocolate-flower-gift-box/img-18.jpeg",
-      "/products/mini-chocolate-flower-gift-box/img-19.jpeg",
-      "/products/mini-chocolate-flower-gift-box/img-20.jpeg",
-      "/products/mini-chocolate-flower-gift-box/img-21.jpeg",
-      "/products/mini-chocolate-flower-gift-box/img-22.jpeg",
-      "/products/mini-chocolate-flower-gift-box/img-23.jpeg",
-    ],
-  },
-
-  // Sticker Category
-  {
-    id: "sticker-1",
-    name: {
-      "zh-CN": "贴纸套装",
-      en: "Sticker Set",
-      ms: "Set Pelekat",
-    },
-    price: "N/A",
-    description: {
-      "zh-CN": "定制贴纸套装",
-      en: "Custom sticker set",
-      ms: "Set pelekat tersuai",
-    },
-    category: "sticker",
-    images: [
-      "/products/sticker/img-1.jpeg",
-      "/products/sticker/img-2.jpeg",
-      "/products/sticker/img-3.jpeg",
-      "/products/sticker/img-4.jpeg",
-      "/products/sticker/img-5.jpeg",
-      "/products/sticker/img-6.jpeg",
-      "/products/sticker/img-7.jpeg",
-      "/products/sticker/img-8.jpeg",
-      "/products/sticker/img-9.jpeg",
-      "/products/sticker/img-10.jpeg",
-      "/products/sticker/img-11.jpeg",
-      "/products/sticker/img-12.jpeg",
-      "/products/sticker/img-13.jpeg",
-      "/products/sticker/img-14.jpeg",
-      "/products/sticker/img-15.jpeg",
-      "/products/sticker/img-16.jpeg",
-      "/products/sticker/img-17.jpeg",
-    ],
-  },
-
   // Flower Bouquet Category (19 products)
   {
     id: "flower-1",
@@ -899,70 +766,6 @@ export const products: Product[] = [
     },
     category: "flower-bouquet",
     images: ["/products/flower-bouquet/whatsapp-image-2022-02-25-at-16-20-11.jpeg"],
-  },
-  {
-    id: "flower-19",
-    name: {
-      "zh-CN": "母亲节花束",
-      en: "Mother's Day Bouquet",
-      ms: "Buket Bunga Hari Ibu",
-    },
-    price: "RM45.00-RM55.00",
-    description: {
-      "zh-CN": "母亲节特别花束",
-      en: "Special Mother's Day bouquet",
-      ms: "Buket bunga istimewa Hari Ibu",
-    },
-    category: "flower-bouquet",
-    images: ["/products/flower-bouquet/k.jpeg"],
-  },
-  {
-    id: "flower-20",
-    name: {
-      "zh-CN": "父亲节花束",
-      en: "Father's Day Bouquet",
-      ms: "Buket Bunga Hari Bapa",
-    },
-    price: "RM40.00-RM50.00",
-    description: {
-      "zh-CN": "父亲节特别花束",
-      en: "Special Father's Day bouquet",
-      ms: "Buket bunga istimewa Hari Bapa",
-    },
-    category: "flower-bouquet",
-    images: ["/products/flower-bouquet/s.jpeg"],
-  },
-  {
-    id: "flower-21",
-    name: {
-      "zh-CN": "感谢花束",
-      en: "Thank You Bouquet",
-      ms: "Buket Bunga Terima Kasih",
-    },
-    price: "RM35.00-RM45.00",
-    description: {
-      "zh-CN": "表达感谢的花束",
-      en: "Bouquet to express gratitude",
-      ms: "Buket bunga untuk menyatakan terima kasih",
-    },
-    category: "flower-bouquet",
-    images: ["/products/flower-bouquet/t.jpeg"],
-  },
-  {
-    id: "flower-22",
-    name: {
-      "zh-CN": "节日花束",
-      en: "Holiday Bouquet",
-      ms: "Buket Bunga Cuti",
-    },
-    price: "RM50.00-RM60.00",
-    description: {
-      "zh-CN": "节日庆祝花束",
-      en: "Holiday celebration bouquet",
-      ms: "Buket bunga sambutan cuti",
-    },
-    category: "flower-bouquet",
-    images: ["/products/flower-bouquet/whatsapp-image-2022-02-25-at-16-20-11-1-.jpeg"],
   },
 
   // Mini Bouquet Category (expanded to include all existing images)
@@ -1743,92 +1546,18 @@ export const products: Product[] = [
 ]
 
 export const categories = [
-  {
-    id: "all",
-    name: {
-      "zh-CN": "所有产品",
-      en: "All Products",
-      ms: "Semua Produk",
-    },
-  },
-  {
-    id: "helium-balloon",
-    name: {
-      "zh-CN": "氦气球",
-      en: "Helium Balloon",
-      ms: "Belon Helium",
-    },
-  },
-  {
-    id: "bobo-foil-balloon",
-    name: {
-      "zh-CN": "Bobo/铝箔气球",
-      en: "Bobo/Foil Balloon",
-      ms: "Belon Bobo/Foil",
-    },
-  },
-  // Money Bouquet Category
-  {
-    id: "money-bouquet",
-    name: {
-      "zh-CN": "金钱花束",
-      en: "Money Bouquet",
-      ms: "Buket Wang",
-    },
-  },
-  {
-    id: "graduation",
-    name: {
-      "zh-CN": "毕业花束",
-      en: "Graduation Bouquet",
-      ms: "Buket Graduasi",
-    },
-  },
-  {
-    id: "zero-snack-chocolate",
-    name: {
-      "zh-CN": "零食巧克力",
-      en: "Zero Snack Chocolate",
-      ms: "Coklat Snek Sifar",
-    },
-  },
-  {
-    id: "mini-chocolate-flower-gift-box",
-    name: {
-      "zh-CN": "迷你巧克力花束礼盒",
-      en: "Mini Chocolate Flower Gift Box",
-      ms: "Kotak Hadiah Bunga Coklat Mini",
-    },
-  },
-  {
-    id: "sticker",
-    name: {
-      "zh-CN": "贴纸",
-      en: "Sticker",
-      ms: "Pelekat",
-    },
-  },
-  {
-    id: "flower-bouquet",
-    name: {
-      "zh-CN": "花束",
-      en: "Flower Bouquet",
-      ms: "Buket Bunga",
-    },
-  },
-  {
-    id: "mini-bouquet",
-    name: {
-      "zh-CN": "迷你花束",
-      en: "Mini Bouquet",
-      ms: "Buket Mini",
-    },
-  },
+  { id: "all", name: { "zh-CN": "所有产品", en: "All Products", ms: "Semua Produk" } },
+  { id: "helium-balloon", name: { "zh-CN": "氦气球", en: "Helium Balloon", ms: "Belon Helium" } },
+  { id: "bobo-foil-balloon", name: { "zh-CN": "Bobo/铝箔气球", en: "Bobo/Foil Balloon", ms: "Belon Bobo/Foil" } },
+  { id: "money-bouquet", name: { "zh-CN": "金钱花束", en: "Money Bouquet", ms: "Buket Wang" } },
+  { id: "graduation", name: { "zh-CN": "毕业花束", en: "Graduation Bouquet", ms: "Buket Graduasi" } },
+  { id: "flower-bouquet", name: { "zh-CN": "花束", en: "Flower Bouquet", ms: "Buket Bunga" } },
+  { id: "mini-bouquet", name: { "zh-CN": "迷你花束", en: "Mini Bouquet", ms: "Buket Mini" } },
   {
     id: "bobo-balloon-chocolate-flower-gift-box",
     name: {
-      "zh-CN": "Bobo气球巧克力花束礼盒",
-      en: "Bobo Balloon Chocolate Flower Gift Box",
+      "zh-CN": "Bobo气球巧克力花礼品盒",
+      en: "Bobo Balloon Chocolate & Flower Gift Box",
       ms: "Kotak Hadiah Bunga Coklat Belon Bobo",
     },
   },
