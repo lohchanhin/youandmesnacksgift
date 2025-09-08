@@ -23,6 +23,18 @@ export default function HomePage() {
     return categoryProducts.slice(0, 3) // Get first 3 products as preview
   }
 
+  const getCategoryCount = (categoryId: string) => {
+    if (categoryId === "all") {
+      const totalCount = products.length
+      console.log(`[v0] Category ${categoryId} has ${totalCount} products (total)`)
+      return totalCount
+    }
+
+    const count = products.filter((p) => p.category === categoryId).length
+    console.log(`[v0] Category ${categoryId} has ${count} products`)
+    return count
+  }
+
   const featuredCategories = categories.filter((cat) => cat.id !== "all").slice(0, 11) // Show all 11 categories
   console.log("[v0] Featured categories:", featuredCategories?.length || 0)
 
@@ -103,6 +115,8 @@ export default function HomePage() {
             {featuredCategories.map((category) => {
               const previewProducts = getCategoryPreview(category.id)
               const mainProduct = previewProducts[0]
+              const categoryCount = getCategoryCount(category.id)
+              console.log(`[v0] Rendering category ${category.id} with ${categoryCount} products`)
 
               return (
                 <Card key={category.id} className="overflow-hidden hover:shadow-lg transition-shadow">
@@ -129,7 +143,9 @@ export default function HomePage() {
                   <CardContent className="p-4 sm:p-6">
                     <div className="flex items-center gap-2 mb-3">
                       <Badge variant="secondary">
-                        {category.count} {t("products.items")}
+                        <span style={{ color: "inherit", fontWeight: "500" }}>
+                          {categoryCount} {t("products.items")}
+                        </span>
                       </Badge>
                       <div className="flex items-center gap-1">
                         <Star className="h-4 w-4 fill-accent text-accent" />
@@ -144,8 +160,18 @@ export default function HomePage() {
                         ? mainProduct.description[language]
                         : `${t("products.beautiful")}${category.name[language]}${t("products.series")}`}
                     </p>
-                    <Button asChild size="sm" className="w-full">
-                      <Link href={`/products?category=${category.id}`}>{t("products.viewDetails")}</Link>
+                    <Button
+                      asChild
+                      size="sm"
+                      className="w-full bg-red-600 hover:bg-red-700 text-white border-0"
+                      style={{ backgroundColor: "#dc2626", color: "#ffffff" }}
+                    >
+                      <Link
+                        href={`/products?category=${category.id}`}
+                        style={{ color: "#ffffff", textDecoration: "none" }}
+                      >
+                        {t("products.viewDetails")}
+                      </Link>
                     </Button>
                   </CardContent>
                 </Card>

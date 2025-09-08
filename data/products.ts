@@ -439,88 +439,6 @@ export const products: Product[] = [
     images: ["/products/bobo-foil/foil-balloon-10-18inch/g.jpeg", "/products/bobo-foil/foil-balloon-10-18inch/g2.jpeg"],
   },
 
-  // Money Bouquet Category (6 products)
-  {
-    id: "money-1",
-    name: {
-      "zh-CN": "取款气球套装1",
-      en: "Money Balloon Set 1",
-      ms: "Set Belon Wang 1",
-    },
-    price: "RM25.00-RM30.00",
-    description: {
-      "zh-CN": "取款氦气球排列",
-      en: "Arrangement of helium balloons for withdrawal",
-      ms: "Penataan belon helium untuk penarikan wang",
-    },
-    category: "money-bouquet",
-    images: ["/products/money-bouquet/img-1.jpeg"],
-  },
-  {
-    id: "money-2",
-    name: {
-      "zh-CN": "取款气球套装2",
-      en: "Money Balloon Set 2",
-      ms: "Set Belon Wang 2",
-    },
-    price: "RM25.00-RM30.00",
-    description: {
-      "zh-CN": "取款氦气球排列",
-      en: "Arrangement of helium balloons for withdrawal",
-      ms: "Penataan belon helium untuk penarikan wang",
-    },
-    category: "money-bouquet",
-    images: ["/products/money-bouquet/img-2.jpeg"],
-  },
-  {
-    id: "money-4",
-    name: {
-      "zh-CN": "取款气球套装4",
-      en: "Money Balloon Set 4",
-      ms: "Set Belon Wang 4",
-    },
-    price: "RM25.00-RM30.00",
-    description: {
-      "zh-CN": "取款氦气球排列",
-      en: "Arrangement of helium balloons for withdrawal",
-      ms: "Penataan belon helium untuk penarikan wang",
-    },
-    category: "money-bouquet",
-    images: ["/products/money-bouquet/img-4.jpeg"],
-  },
-  {
-    id: "money-5",
-    name: {
-      "zh-CN": "取款气球套装5",
-      en: "Money Balloon Set 5",
-      ms: "Set Belon Wang 5",
-    },
-    price: "RM25.00-RM30.00",
-    description: {
-      "zh-CN": "取款氦气球排列",
-      en: "Arrangement of helium balloons for withdrawal",
-      ms: "Penataan belon helium untuk penarikan wang",
-    },
-    category: "money-bouquet",
-    images: ["/products/money-bouquet/img-5.jpeg"],
-  },
-  {
-    id: "money-6",
-    name: {
-      "zh-CN": "取款气球套装6",
-      en: "Money Balloon Set 6",
-      ms: "Set Belon Wang 6",
-    },
-    price: "RM25.00-RM30.00",
-    description: {
-      "zh-CN": "取款氦气球排列",
-      en: "Arrangement of helium balloons for withdrawal",
-      ms: "Penataan belon helium untuk penarikan wang",
-    },
-    category: "money-bouquet",
-    images: ["/products/money-bouquet/img-6.jpeg"],
-  },
-
   // Graduation Bouquet Category
   {
     id: "graduation-1",
@@ -1612,6 +1530,88 @@ export const products: Product[] = [
       "/products/bobo-balloon-chocolate-flower-gift-box/choco-box-1/i2.jpeg",
     ],
   },
+
+  // Money Bouquet Category (5 products)
+  {
+    id: "money-1",
+    name: {
+      "zh-CN": "生日金钱花束套装1",
+      en: "Birthday Money Bouquet Set 1",
+      ms: "Set Buket Wang Hari Jadi 1",
+    },
+    price: "RM45.00",
+    description: {
+      "zh-CN": "生日主题金钱花束，包含彩色气球和现金装饰",
+      en: "Birthday themed money bouquet with colorful balloons and cash decoration",
+      ms: "Buket wang bertema hari jadi dengan belon berwarna dan hiasan tunai",
+    },
+    category: "money-bouquet",
+    images: ["/products/money-bouquet/img-1.jpeg"],
+  },
+  {
+    id: "money-2",
+    name: {
+      "zh-CN": "金币巧克力花束",
+      en: "Gold Coin Chocolate Bouquet",
+      ms: "Buket Coklat Syiling Emas",
+    },
+    price: "RM38.00",
+    description: {
+      "zh-CN": "金币巧克力花束，配蓝色玫瑰装饰",
+      en: "Gold coin chocolate bouquet with blue rose decoration",
+      ms: "Buket coklat syiling emas dengan hiasan mawar biru",
+    },
+    category: "money-bouquet",
+    images: ["/products/money-bouquet/img-2.jpeg"],
+  },
+  {
+    id: "money-4",
+    name: {
+      "zh-CN": "粉色金钱花束",
+      en: "Pink Money Bouquet",
+      ms: "Buket Wang Merah Jambu",
+    },
+    price: "RM42.00",
+    description: {
+      "zh-CN": "粉色包装金钱花束，适合女性庆祝场合",
+      en: "Pink wrapped money bouquet, perfect for female celebrations",
+      ms: "Buket wang berbalut merah jambu, sesuai untuk sambutan wanita",
+    },
+    category: "money-bouquet",
+    images: ["/products/money-bouquet/img-4.jpeg"],
+  },
+  {
+    id: "money-5",
+    name: {
+      "zh-CN": "蓝色金钱花束",
+      en: "Blue Money Bouquet",
+      ms: "Buket Wang Biru",
+    },
+    price: "RM40.00",
+    description: {
+      "zh-CN": "蓝色包装金钱花束，配白色小花装饰",
+      en: "Blue wrapped money bouquet with white flower decoration",
+      ms: "Buket wang berbalut biru dengan hiasan bunga putih",
+    },
+    category: "money-bouquet",
+    images: ["/products/money-bouquet/img-5.jpeg"],
+  },
+  {
+    id: "money-6",
+    name: {
+      "zh-CN": "零食金钱花束",
+      en: "Snack Money Bouquet",
+      ms: "Buket Wang Snek",
+    },
+    price: "RM35.00",
+    description: {
+      "zh-CN": "零食和现金组合花束，红色包装",
+      en: "Snack and cash combination bouquet in red wrapping",
+      ms: "Buket gabungan snek dan tunai dalam balutan merah",
+    },
+    category: "money-bouquet",
+    images: ["/products/money-bouquet/img-6.jpeg"],
+  },
 ]
 
 export const categories = [
@@ -1622,7 +1622,6 @@ export const categories = [
       en: "All Products",
       ms: "Semua Produk",
     },
-    count: products.length,
   },
   {
     id: "helium-balloon",
@@ -1631,7 +1630,6 @@ export const categories = [
       en: "Helium Balloon",
       ms: "Belon Helium",
     },
-    count: 15,
   },
   {
     id: "bobo-foil-balloon",
@@ -1640,8 +1638,8 @@ export const categories = [
       en: "Bobo/Foil Balloon",
       ms: "Belon Bobo/Foil",
     },
-    count: 7,
   },
+  // Money Bouquet Category
   {
     id: "money-bouquet",
     name: {
@@ -1649,7 +1647,6 @@ export const categories = [
       en: "Money Bouquet",
       ms: "Buket Wang",
     },
-    count: 6,
   },
   {
     id: "graduation",
@@ -1658,7 +1655,6 @@ export const categories = [
       en: "Graduation Bouquet",
       ms: "Buket Graduasi",
     },
-    count: 1,
   },
   {
     id: "zero-snack-chocolate",
@@ -1667,7 +1663,6 @@ export const categories = [
       en: "Zero Snack Chocolate",
       ms: "Coklat Snek Sifar",
     },
-    count: 1,
   },
   {
     id: "mini-chocolate-flower-gift-box",
@@ -1676,7 +1671,6 @@ export const categories = [
       en: "Mini Chocolate Flower Gift Box",
       ms: "Kotak Hadiah Bunga Coklat Mini",
     },
-    count: 1,
   },
   {
     id: "sticker",
@@ -1685,7 +1679,6 @@ export const categories = [
       en: "Sticker",
       ms: "Pelekat",
     },
-    count: 1,
   },
   {
     id: "flower-bouquet",
@@ -1694,7 +1687,6 @@ export const categories = [
       en: "Flower Bouquet",
       ms: "Buket Bunga",
     },
-    count: 19,
   },
   {
     id: "mini-bouquet",
@@ -1703,7 +1695,6 @@ export const categories = [
       en: "Mini Bouquet",
       ms: "Buket Mini",
     },
-    count: 9,
   },
   {
     id: "bobo-balloon-chocolate-flower-gift-box",
@@ -1712,6 +1703,5 @@ export const categories = [
       en: "Bobo Balloon Chocolate Flower Gift Box",
       ms: "Kotak Hadiah Bunga Coklat Belon Bobo",
     },
-    count: 41,
   },
 ]

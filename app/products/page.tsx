@@ -25,6 +25,13 @@ export default function ProductsPage() {
     return products.filter((product) => product.category === selectedCategory)
   }, [selectedCategory])
 
+  const getCategoryCount = (categoryId: string) => {
+    if (categoryId === "all") {
+      return products.length
+    }
+    return products.filter((p) => p.category === categoryId).length
+  }
+
   const nextImage = (totalImages: number) => {
     setCurrentImageIndex((prev) => (prev + 1) % totalImages)
   }
@@ -79,7 +86,7 @@ export default function ProductsPage() {
         {/* Page Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">{t("products.title")}</h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">{t("products.subtitle")}</p>
+          <p className="text-xl text-gray-700 max-w-2xl mx-auto">{t("products.subtitle")}</p>
         </div>
 
         {/* Category Filter */}
@@ -92,7 +99,7 @@ export default function ProductsPage() {
                 onClick={() => setSelectedCategory(category.id)}
                 className="mb-2 text-xs sm:text-sm"
               >
-                {category.name[language]} ({category.count})
+                {category.name[language]} ({getCategoryCount(category.id)})
               </Button>
             ))}
           </div>
@@ -111,7 +118,7 @@ export default function ProductsPage() {
                     height={300}
                     className="w-full h-64 object-contain bg-gray-50 group-hover:scale-105 transition-transform duration-300"
                   />
-                  <Badge className="absolute top-2 left-2 bg-red-600 text-xs">
+                  <Badge className="absolute top-2 left-2 bg-red-600 text-white text-xs">
                     {categories.find((cat) => cat.id === product.category)?.name[language] || product.category}
                   </Badge>
                   {product.images.length > 1 && (
@@ -122,12 +129,16 @@ export default function ProductsPage() {
                 </div>
                 <div className="p-4">
                   <h3 className="font-semibold text-lg text-gray-900 mb-2">{product.name[language]}</h3>
-                  <p className="text-gray-600 text-sm mb-3 line-clamp-2">{product.description[language]}</p>
+                  <p className="text-gray-700 text-sm mb-3 line-clamp-2">{product.description[language]}</p>
                   <div className="space-y-3">
                     <span className="text-2xl font-bold text-red-600 block">{product.price}</span>
                     <Dialog>
                       <DialogTrigger asChild>
-                        <Button size="sm" className="bg-red-600 hover:bg-red-700 w-full" onClick={resetImageIndex}>
+                        <Button
+                          size="sm"
+                          className="bg-red-600 hover:bg-red-700 text-white w-full"
+                          onClick={resetImageIndex}
+                        >
                           {t("products.viewDetails")}
                         </Button>
                       </DialogTrigger>
@@ -195,14 +206,14 @@ export default function ProductsPage() {
                           </div>
 
                           <div>
-                            <p className="text-gray-600 mb-2">{product.description[language]}</p>
+                            <p className="text-gray-700 mb-2">{product.description[language]}</p>
                             <p className="text-2xl font-bold text-red-600 mb-4">{product.price}</p>
                             <Badge className="bg-red-100 text-red-800">
                               {categories.find((cat) => cat.id === product.category)?.name[language] ||
                                 product.category}
                             </Badge>
                           </div>
-                          <div className="text-sm text-gray-500">
+                          <div className="text-sm text-gray-600">
                             <p>{t("products.contactInfo")}</p>
                             <p className="mt-2">WhatsApp: +60 18-313 7277</p>
                           </div>
@@ -218,7 +229,7 @@ export default function ProductsPage() {
 
         {filteredProducts.length === 0 && (
           <div className="text-center py-12">
-            <p className="text-gray-500 text-lg">{t("products.noProducts")}</p>
+            <p className="text-gray-600 text-lg">{t("products.noProducts")}</p>
           </div>
         )}
 
@@ -226,7 +237,7 @@ export default function ProductsPage() {
         <section id="contact" className="bg-white rounded-2xl shadow-lg p-8 mb-8">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">{t("contact.title")}</h2>
-            <p className="text-gray-600">{t("contact.subtitle")}</p>
+            <p className="text-gray-700">{t("contact.subtitle")}</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -235,7 +246,7 @@ export default function ProductsPage() {
                 <Phone className="h-6 w-6 text-green-600" />
               </div>
               <h3 className="font-semibold text-gray-900 mb-2">WhatsApp</h3>
-              <p className="text-gray-600">+60 18-313 7277</p>
+              <p className="text-gray-700">+60 18-313 7277</p>
             </div>
 
             <div className="text-center">
@@ -243,7 +254,7 @@ export default function ProductsPage() {
                 <Facebook className="h-6 w-6 text-blue-600" />
               </div>
               <h3 className="font-semibold text-gray-900 mb-2">Facebook</h3>
-              <p className="text-gray-600">You & Me Gifts</p>
+              <p className="text-gray-700">You & Me Gifts</p>
             </div>
 
             <div className="text-center">
@@ -251,7 +262,7 @@ export default function ProductsPage() {
                 <Instagram className="h-6 w-6 text-pink-600" />
               </div>
               <h3 className="font-semibold text-gray-900 mb-2">Instagram</h3>
-              <p className="text-gray-600">@youandmegifts</p>
+              <p className="text-gray-700">@youandmegifts</p>
             </div>
 
             <div className="text-center">
@@ -259,7 +270,7 @@ export default function ProductsPage() {
                 <MapPin className="h-6 w-6 text-red-600" />
               </div>
               <h3 className="font-semibold text-gray-900 mb-2">{t("contact.address")}</h3>
-              <p className="text-gray-600">Semenyih, Selangor</p>
+              <p className="text-gray-700">Semenyih, Selangor</p>
             </div>
           </div>
         </section>
