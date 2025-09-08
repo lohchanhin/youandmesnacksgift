@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Menu, Heart } from "lucide-react"
 import Link from "next/link"
+import { useLanguage } from "@/contexts/language-context"
+import { LanguageSwitcher } from "@/components/language-switcher"
 
 interface MobileNavProps {
   isOpen?: boolean
@@ -13,6 +15,7 @@ interface MobileNavProps {
 
 export function MobileNav({ isOpen, onClose }: MobileNavProps) {
   const [open, setOpen] = useState(isOpen || false)
+  const { t } = useLanguage()
 
   const handleClose = () => {
     setOpen(false)
@@ -24,7 +27,7 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
       <SheetTrigger asChild>
         <Button variant="ghost" size="sm" className="md:hidden">
           <Menu className="h-5 w-5" />
-          <span className="sr-only">打开菜单</span>
+          <span className="sr-only">{t("nav.openMenu")}</span>
         </Button>
       </SheetTrigger>
       <SheetContent side="right" className="w-[300px] sm:w-[400px]">
@@ -40,23 +43,29 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
               className="text-lg text-foreground hover:text-primary transition-colors py-2"
               onClick={handleClose}
             >
-              首页
+              {t("nav.home")}
             </Link>
             <Link
               href="/products"
               className="text-lg text-foreground hover:text-primary transition-colors py-2"
               onClick={handleClose}
             >
-              产品展示
+              {t("nav.products")}
             </Link>
             <Link
               href="/contact"
               className="text-lg text-foreground hover:text-primary transition-colors py-2"
               onClick={handleClose}
             >
-              联系我们
+              {t("nav.contact")}
             </Link>
           </nav>
+
+          <div className="border-t border-border pt-4 pb-2">
+            <div className="flex items-center justify-center">
+              <LanguageSwitcher />
+            </div>
+          </div>
         </div>
       </SheetContent>
     </Sheet>

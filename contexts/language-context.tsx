@@ -17,6 +17,7 @@ const translations = {
     "nav.home": "首页",
     "nav.products": "产品展示",
     "nav.contact": "联系我们",
+    "nav.openMenu": "打开菜单", // Added missing mobile navigation translation key
 
     // Homepage
     "hero.title": "精美礼品与气球专家",
@@ -98,6 +99,7 @@ const translations = {
     "nav.home": "Home",
     "nav.products": "Products",
     "nav.contact": "Contact",
+    "nav.openMenu": "Open Menu", // Added missing mobile navigation translation key
 
     // Homepage
     "hero.title": "Premium Gifts & Balloon Experts",
@@ -181,6 +183,7 @@ const translations = {
     "nav.home": "Laman Utama",
     "nav.products": "Produk",
     "nav.contact": "Hubungi Kami",
+    "nav.openMenu": "Buka Menu", // Added missing mobile navigation translation key
 
     // Homepage
     "hero.title": "Pakar Hadiah & Belon Premium",
