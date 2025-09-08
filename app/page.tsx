@@ -357,14 +357,7 @@ export default function HomePage() {
                   vertex-solution-IT解决方案专家
                 </Link>{" "}
                 •{" "}
-                <Link
-                  href="https://v0.dev"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-medium hover:text-primary transition-colors underline decoration-dotted"
-                >
-                  v0 App
-                </Link>
+                
               </p>
             </div>
           </div>
