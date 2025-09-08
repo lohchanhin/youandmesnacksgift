@@ -133,8 +133,8 @@ export const metadata: Metadata = {
   category: "shopping",
   generator: "v0.app",
   icons: {
-    icon: "/favicon-32x32.png",
-    apple: "/apple-touch-icon.png",
+    icon: "/favicon.ico",
+    apple: "/favicon.ico",
   },
 }
 
@@ -146,8 +146,8 @@ export default async function RootLayout({
   return (
     <html lang="zh-CN">
       <head>
-        <link rel="icon" href="/favicon-32x32.png" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
         <script
           type="application/ld+json"
