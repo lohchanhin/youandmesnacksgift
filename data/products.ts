@@ -1199,22 +1199,6 @@ export const products: Product[] = [
     images: ["/products/bobo-balloon-chocolate-flower-gift-box/bobo-box/l.jpeg"],
   },
   {
-    id: "bobo-box-13",
-    name: {
-      "zh-CN": "特别场合波波礼品盒",
-      en: "Special Occasion Bobo Gift Box",
-      ms: "Kotak Hadiah Belon Bobo Kegiatan Istimewa",
-    },
-    price: "RM85.00-RM105.00",
-    description: {
-      "zh-CN": "特别场合波波气球礼品盒",
-      en: "Special occasion bobo balloon gift box",
-      ms: "Kotak hadiah belon bobo kegiatan istimewa",
-    },
-    category: "bobo-balloon-chocolate-flower-gift-box",
-    images: ["/products/bobo-balloon-chocolate-flower-gift-box/bobo-box/whatsapp-image-2022-02-23-at-01.48.11-1-.jpeg"],
-  },
-  {
     id: "bobo-cho-3-1",
     name: {
       "zh-CN": "波波巧克力豪华套装A",
@@ -1462,102 +1446,65 @@ export const products: Product[] = [
     ],
   },
 
-  // Money Bouquet Category (5 products)
+  // Sticker Category
   {
-    id: "money-1",
+    id: "sticker-1",
     name: {
-      "zh-CN": "生日金钱花束套装1",
-      en: "Birthday Money Bouquet Set 1",
-      ms: "Set Buket Wang Hari Jadi 1",
+      "zh-CN": "定制贴纸系列",
+      en: "Custom Sticker Collection",
+      ms: "Koleksi Pelekat Tersuai",
     },
-    price: "RM45.00",
+    price: "RM5.00-RM15.00",
     description: {
-      "zh-CN": "生日主题金钱花束，包含彩色气球和现金装饰",
-      en: "Birthday themed money bouquet with colorful balloons and cash decoration",
-      ms: "Buket wang bertema hari jadi dengan belon berwarna dan hiasan tunai",
+      "zh-CN": "各种节日和庆祝活动的定制贴纸，包括生日、母亲节、毕业等主题设计",
+      en: "Custom stickers for various holidays and celebrations, including birthday, Mother's Day, graduation and other themed designs",
+      ms: "Pelekat tersuai untuk pelbagai perayaan dan sambutan, termasuk hari lahir, Hari Ibu, graduasi dan reka bentuk bertema lain",
     },
-    category: "money-bouquet",
-    images: ["/products/money-bouquet/img-1.jpeg"],
-  },
-  {
-    id: "money-2",
-    name: {
-      "zh-CN": "金币巧克力花束",
-      en: "Gold Coin Chocolate Bouquet",
-      ms: "Buket Coklat Syiling Emas",
-    },
-    price: "RM38.00",
-    description: {
-      "zh-CN": "金币巧克力花束，配蓝色玫瑰装饰",
-      en: "Gold coin chocolate bouquet with blue rose decoration",
-      ms: "Buket coklat syiling emas dengan hiasan mawar biru",
-    },
-    category: "money-bouquet",
-    images: ["/products/money-bouquet/img-2.jpeg"],
-  },
-  {
-    id: "money-4",
-    name: {
-      "zh-CN": "粉色金钱花束",
-      en: "Pink Money Bouquet",
-      ms: "Buket Wang Merah Jambu",
-    },
-    price: "RM42.00",
-    description: {
-      "zh-CN": "粉色包装金钱花束，适合女性庆祝场合",
-      en: "Pink wrapped money bouquet, perfect for female celebrations",
-      ms: "Buket wang berbalut merah jambu, sesuai untuk sambutan wanita",
-    },
-    category: "money-bouquet",
-    images: ["/products/money-bouquet/img-4.jpeg"],
-  },
-  {
-    id: "money-5",
-    name: {
-      "zh-CN": "蓝色金钱花束",
-      en: "Blue Money Bouquet",
-      ms: "Buket Wang Biru",
-    },
-    price: "RM40.00",
-    description: {
-      "zh-CN": "蓝色包装金钱花束，配白色小花装饰",
-      en: "Blue wrapped money bouquet with white flower decoration",
-      ms: "Buket wang berbalut biru dengan hiasan bunga putih",
-    },
-    category: "money-bouquet",
-    images: ["/products/money-bouquet/img-5.jpeg"],
-  },
-  {
-    id: "money-6",
-    name: {
-      "zh-CN": "零食金钱花束",
-      en: "Snack Money Bouquet",
-      ms: "Buket Wang Snek",
-    },
-    price: "RM35.00",
-    description: {
-      "zh-CN": "零食和现金组合花束，红色包装",
-      en: "Snack and cash combination bouquet in red wrapping",
-      ms: "Buket gabungan snek dan tunai dalam balutan merah",
-    },
-    category: "money-bouquet",
-    images: ["/products/money-bouquet/img-6.jpeg"],
+    category: "sticker",
+    images: [
+      "/products/sticker/img-1.jpeg",
+      "/products/sticker/img-2.jpeg",
+      "/products/sticker/img-3.jpeg",
+      "/products/sticker/img-4.jpeg",
+      "/products/sticker/img-5.jpeg",
+      "/products/sticker/img-6.jpeg",
+      "/products/sticker/img-7.jpeg",
+      "/products/sticker/img-8.jpeg",
+      "/products/sticker/img-9.jpeg",
+      "/products/sticker/img-10.jpeg",
+      "/products/sticker/img-11.jpeg",
+      "/products/sticker/img-12.jpeg",
+      "/products/sticker/img-13.jpeg",
+      "/products/sticker/img-14.jpeg",
+      "/products/sticker/img-15.jpeg",
+      "/products/sticker/img-16.jpeg",
+      "/products/sticker/img-17.jpeg",
+    ],
   },
 ]
 
-export const categories = [
+export interface Category {
+  id: string
+  name: {
+    "zh-CN": string
+    en: string
+    ms: string
+  }
+}
+
+export const categories: Category[] = [
   { id: "all", name: { "zh-CN": "所有产品", en: "All Products", ms: "Semua Produk" } },
   { id: "helium-balloon", name: { "zh-CN": "氦气球", en: "Helium Balloon", ms: "Belon Helium" } },
   { id: "bobo-foil-balloon", name: { "zh-CN": "Bobo/铝箔气球", en: "Bobo/Foil Balloon", ms: "Belon Bobo/Foil" } },
-  { id: "money-bouquet", name: { "zh-CN": "金钱花束", en: "Money Bouquet", ms: "Buket Wang" } },
-  { id: "graduation", name: { "zh-CN": "毕业花束", en: "Graduation Bouquet", ms: "Buket Graduasi" } },
+  { id: "graduation", name: { "zh-CN": "毕业", en: "Graduation", ms: "Graduasi" } },
+  { id: "sticker", name: { "zh-CN": "贴纸", en: "Sticker", ms: "Pelekat" } },
   { id: "flower-bouquet", name: { "zh-CN": "花束", en: "Flower Bouquet", ms: "Buket Bunga" } },
   { id: "mini-bouquet", name: { "zh-CN": "迷你花束", en: "Mini Bouquet", ms: "Buket Mini" } },
   {
     id: "bobo-balloon-chocolate-flower-gift-box",
     name: {
       "zh-CN": "Bobo气球巧克力花礼品盒",
-      en: "Bobo Balloon Chocolate & Flower Gift Box",
+      en: "Bobo Balloon Chocolate Flower Gift Box",
       ms: "Kotak Hadiah Bunga Coklat Belon Bobo",
     },
   },
