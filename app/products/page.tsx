@@ -256,7 +256,7 @@ export default function ProductsPage() {
                             <DialogTitle>{product.name[language]}</DialogTitle>
                           </DialogHeader>
                           <div className="space-y-6">
-                            <div className="relative">
+                            <div className="relative mx-auto w-full max-w-[90vw]" >
                               <div className="aspect-square max-w-full sm:max-w-lg lg:max-w-2xl mx-auto relative overflow-hidden rounded-lg bg-gray-100">
                                 <Image
                                   src={product.images[currentImageIndex] || "/placeholder.svg"}
