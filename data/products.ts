@@ -1570,10 +1570,7 @@ export const products: Product[] = [
       "/products/sticker/img-14.jpeg",
       "/products/sticker/img-15.jpeg",
       "/products/sticker/img-16.jpeg",
-      "/products/sticker/img-17.jpeg",
-      "/products/sticker/img-18.jpeg",
-      "/products/sticker/img-19.jpeg",
-      "/products/sticker/img-20.jpeg",
+      "/products/sticker/img-17.jpeg"     
     ],
   },
 ]
