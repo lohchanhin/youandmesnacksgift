@@ -1546,7 +1546,7 @@ export const products: Product[] = [
       en: "Custom Sticker Collection",
       ms: "Koleksi Pelekat Tersuai",
     },
-    price: "RM5.00-RM15.00",
+    price: "RM3.00-RM5.00",
     description: {
       "zh-CN": "各种节日和庆祝活动的定制贴纸，包括生日、母亲节、毕业等主题设计",
       en: "Custom stickers for various holidays and celebrations, including birthday, Mother's Day, graduation and other themed designs",
