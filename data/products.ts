@@ -1816,6 +1816,129 @@ export const products: Product[] = [
     images: ["/products/money-bouquet/E.jpeg"],
     category: "money-bouquet",
   },
+  // Mini Chocolate Flower Gift Box Products
+  {
+    id: "mini-chocolate-a",
+    name: {
+      "zh-CN": "10寸迷你Bobo巧克力盒",
+      en: "10INCH MINI BOBO CHOCOLATE BOX",
+      ms: "KOTAK COKLAT BOBO MINI 10 INCI",
+    },
+    price: "RM39.00",
+    description: {
+      "zh-CN": "10寸迷你Bobo巧克力盒，包含文字贴纸",
+      en: "10 inch mini bobo chocolate box, including wording sticker",
+      ms: "Kotak coklat bobo mini 10 inci, termasuk pelekat perkataan",
+    },
+    category: "mini-chocolate-flower-gift-box",
+    images: [
+      "/products/mini-chocolate-flower-gift-box/A.jpeg",
+      "/products/mini-chocolate-flower-gift-box/A2.jpeg",
+      "/products/mini-chocolate-flower-gift-box/A3.jpeg",
+      "/products/mini-chocolate-flower-gift-box/A4.jpeg",
+      "/products/mini-chocolate-flower-gift-box/A5.jpeg",
+      "/products/mini-chocolate-flower-gift-box/A6.jpeg",
+    ],
+  },
+  {
+    id: "mini-chocolate-b",
+    name: {
+      "zh-CN": "8寸迷你肥皂玫瑰礼品盒",
+      en: "8INCH MINI SOAP ROSE GIFT BOX",
+      ms: "KOTAK HADIAH MAWAR SABUN MINI 8 INCI",
+    },
+    price: "RM45.00",
+    description: {
+      "zh-CN": "8寸迷你肥皂玫瑰礼品盒，包含文字贴纸",
+      en: "8 inch mini soap rose gift box, including wording sticker",
+      ms: "Kotak hadiah mawar sabun mini 8 inci, termasuk pelekat perkataan",
+    },
+    category: "mini-chocolate-flower-gift-box",
+    images: ["/products/mini-chocolate-flower-gift-box/B.jpeg", "/products/mini-chocolate-flower-gift-box/B2.jpeg"],
+  },
+  {
+    id: "mini-chocolate-c",
+    name: {
+      "zh-CN": "迷你巧克力盒",
+      en: "MINI CHOCOLATE BOX",
+      ms: "KOTAK COKLAT MINI",
+    },
+    price: "RM15.00",
+    description: {
+      "zh-CN": "迷你巧克力盒，包含文字贴纸",
+      en: "Mini chocolate box, including wording sticker",
+      ms: "Kotak coklat mini, termasuk pelekat perkataan",
+    },
+    category: "mini-chocolate-flower-gift-box",
+    images: [
+      "/products/mini-chocolate-flower-gift-box/C.jpeg",
+      "/products/mini-chocolate-flower-gift-box/C2.jpeg",
+      "/products/mini-chocolate-flower-gift-box/C3.jpeg",
+      "/products/mini-chocolate-flower-gift-box/C4.jpeg",
+      "/products/mini-chocolate-flower-gift-box/C5.jpeg",
+      "/products/mini-chocolate-flower-gift-box/C6.jpeg",
+    ],
+  },
+  {
+    id: "mini-chocolate-d",
+    name: {
+      "zh-CN": "8寸Bobo巧克力盒",
+      en: "8INCH BOBO CHOCOLATE BOX",
+      ms: "KOTAK COKLAT BOBO 8 INCI",
+    },
+    price: "RM40.00",
+    description: {
+      "zh-CN": "8寸Bobo巧克力盒，包含文字贴纸",
+      en: "8 inch bobo chocolate box, including wording sticker",
+      ms: "Kotak coklat bobo 8 inci, termasuk pelekat perkataan",
+    },
+    category: "mini-chocolate-flower-gift-box",
+    images: [
+      "/products/mini-chocolate-flower-gift-box/D.jpeg",
+      "/products/mini-chocolate-flower-gift-box/D2.jpeg"
+    ],
+  },
+  {
+    id: "mini-chocolate-e",
+    name: {
+      "zh-CN": "10寸铝箔Bobo巧克力套装",
+      en: "10INCH FOIL BOBO CHOCOLATE SET",
+      ms: "SET COKLAT BOBO FOIL 10 INCI",
+    },
+    price: "RM40.00",
+    description: {
+      "zh-CN": "10寸铝箔Bobo巧克力套装，包含文字贴纸",
+      en: "10 inch foil bobo chocolate set, including wording sticker",
+      ms: "Set coklat bobo foil 10 inci, termasuk pelekat perkataan",
+    },
+    category: "mini-chocolate-flower-gift-box",
+    images: [
+      "/products/mini-chocolate-flower-gift-box/E.jpeg",
+      "/products/mini-chocolate-flower-gift-box/E2.jpeg",
+      "/products/mini-chocolate-flower-gift-box/E3.jpeg",
+    ],
+  },
+  {
+    id: "mini-chocolate-f",
+    name: {
+      "zh-CN": "8寸Bobo巧克力迷你盒",
+      en: "8 INCH BOBO CHOCO MINI BOX",
+      ms: "KOTAK MINI COKLAT BOBO 8 INCI",
+    },
+    price: "RM28.00",
+    description: {
+      "zh-CN": "8寸Bobo巧克力迷你盒，包含文字贴纸",
+      en: "8 inch bobo chocolate mini box, including wording sticker",
+      ms: "Kotak mini coklat bobo 8 inci, termasuk pelekat perkataan",
+    },
+    category: "mini-chocolate-flower-gift-box",
+    images: [
+      "/products/mini-chocolate-flower-gift-box/F.jpeg",
+      "/products/mini-chocolate-flower-gift-box/F2.jpeg",
+      "/products/mini-chocolate-flower-gift-box/F3.jpeg",
+    ],
+  },
+
 ]
 
 export interface Category {
@@ -1841,6 +1964,14 @@ export const categories: Category[] = [
       "zh-CN": "Bobo气球巧克力花礼品盒",
       en: "Bobo Balloon Chocolate Flower Gift Box",
       ms: "Kotak Hadiah Bunga Coklat Belon Bobo",
+    },
+  },
+  {
+    id: "mini-chocolate-flower-gift-box",
+    name: {
+      "zh-CN": "迷你巧克力花礼品盒 ",
+      en: "Mini Chocolate Flower Gift Box",
+      ms: "Kotak Hadiah Bunga Coklat Mini",
     },
   },
   {
