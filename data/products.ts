@@ -1736,6 +1736,86 @@ export const products: Product[] = [
     category: "bouquet-chocolate",
     images: ["/products/bouquet-chocolate/chco-duit-bou/E.jpeg"],
   },
+  {
+    id: "money-bouquet-1",
+    name: {
+      "zh-CN": "巧克力钱花束",
+      en: "CHOCOLATE MONEY BOUQUET",
+      ms: "Buket Wang Coklat",
+    },
+    description: {
+      "zh-CN": "10块巧克力，10张现金，*价格不包括现金",
+      en: "10pcs Chocolate, 10pcs Cash, *PRICE NO INCLUDE CASH",
+      ms: "10pcs Coklat, 10pcs Wang Tunai, *HARGA TIDAK TERMASUK WANG TUNAI",
+    },
+    price: "70.0",
+    images: ["/products/money-bouquet/A.jpeg"],
+    category: "money-bouquet",
+  },
+  {
+    id: "money-bouquet-2",
+    name: {
+      "zh-CN": "费列罗钱花束",
+      en: "FERRERO MONEY BOUQUET",
+      ms: "Buket Wang Ferrero",
+    },
+    description: {
+      "zh-CN": "15块费列罗，15张现金，3朵玫瑰，*价格不包括现金",
+      en: "15pcs Ferrero, 15pcs Cash, 3pcs Rose, *PRICE NO INCLUDE CASH",
+      ms: "15pcs Ferrero, 15pcs Wang Tunai, 3pcs Mawar, *HARGA TIDAK TERMASUK WANG TUNAI",
+    },
+    price: "90.0",
+    images: ["/products/money-bouquet/B.jpeg"],
+    category: "money-bouquet",
+  },
+  {
+    id: "money-bouquet-3",
+    name: {
+      "zh-CN": "简单钱花束",
+      en: "SIMPLE MONEY BOUQUET",
+      ms: "Buket Wang Mudah",
+    },
+    description: {
+      "zh-CN": "18张现金，3朵香皂玫瑰配满天星，*价格不包括现金",
+      en: "18pcs Cash, 3pcs Soap Rose with baby breath, *PRICE NO INCLUDE CASH",
+      ms: "18pcs Wang Tunai, 3pcs Mawar Sabun dengan baby breath, *HARGA TIDAK TERMASUK WANG TUNAI",
+    },
+    price: "50.0",
+    images: ["/products/money-bouquet/C.jpeg", "/products/money-bouquet/C2.jpeg"],
+    category: "money-bouquet",
+  },
+  {
+    id: "money-bouquet-4",
+    name: {
+      "zh-CN": "简单钱花束",
+      en: "SIMPLE MONEY BOUQUET",
+      ms: "Buket Wang Mudah",
+    },
+    description: {
+      "zh-CN": "15张现金，配干花装饰，*价格不包括现金",
+      en: "15pcs Cash, with Dry Flower Deco, *PRICE NO INCLUDE CASH",
+      ms: "15pcs Wang Tunai, dengan Hiasan Bunga Kering, *HARGA TIDAK TERMASUK WANG TUNAI",
+    },
+    price: "50.0",
+    images: ["/products/money-bouquet/D.jpeg"],
+    category: "money-bouquet",
+  },
+  {
+    id: "money-bouquet-5",
+    name: {
+      "zh-CN": "巧克力钱花束",
+      en: "CHOCOLATE MONEY BOUQUET",
+      ms: "Buket Wang Coklat",
+    },
+    description: {
+      "zh-CN": "20张现金，10块巧克力，*价格不包括现金",
+      en: "20pcs Cash, 10pcs Chocolate, *PRICE NO INCLUDE CASH",
+      ms: "20pcs Wang Tunai, 10pcs Coklat, *HARGA TIDAK TERMASUK WANG TUNAI",
+    },
+    price: "70.0",
+    images: ["/products/money-bouquet/E.jpeg"],
+    category: "money-bouquet",
+  },
 ]
 
 export interface Category {
@@ -1769,6 +1849,14 @@ export const categories: Category[] = [
       "zh-CN": "花束巧克力",
       en: "Bouquet Chocolate",
       ms: "Buket Coklat",
+    },
+  },
+  {
+    id: "money-bouquet",
+    name: {
+      "zh-CN": "钱花束",
+      en: "Money Bouquet",
+      ms: "Buket Wang",
     },
   },
 ]
