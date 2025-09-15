@@ -1464,6 +1464,297 @@ export const products: Product[] = [
       "/products/sticker/img-17.jpeg",
     ],
   },
+  // Bouquet Chocolate Category (16 products)
+  {
+    id: "bouquet-chocolate-1",
+    name: {
+      "zh-CN": "迷你气球巧克力花束",
+      en: "Mini Balloon Choco Bouquet",
+      ms: "Buket Coklat Belon Mini",
+    },
+    price: "RM39.90",
+    description: {
+      "zh-CN": "精美的迷你气球巧克力花束，完美的礼物选择",
+      en: "Beautiful mini balloon chocolate bouquet, perfect gift choice",
+      ms: "Buket coklat belon mini yang cantik, pilihan hadiah yang sempurna",
+    },
+    category: "bouquet-chocolate",
+    images: [
+      "/products/bouquet-chocolate/bouquet%20chi/A.jpeg",
+      "/products/bouquet-chocolate/bouquet%20chi/A2.jpeg",
+      "/products/bouquet-chocolate/bouquet%20chi/A3.jpeg",
+      "/products/bouquet-chocolate/bouquet%20chi/A4.jpeg",
+    ],
+  },
+  {
+    id: "bouquet-chocolate-2",
+    name: {
+      "zh-CN": "8寸波波巧克力花束",
+      en: "8 Inch Bobo Choco Bouquet",
+      ms: "Buket Coklat Bobo 8 Inci",
+    },
+    price: "RM45.00",
+    description: {
+      "zh-CN": "8寸波波气球配巧克力花束，温馨浪漫",
+      en: "8-inch bobo balloon with chocolate bouquet, warm and romantic",
+      ms: "Belon bobo 8 inci dengan buket coklat, hangat dan romantik",
+    },
+    category: "bouquet-chocolate",
+    images: [
+      "/products/bouquet-chocolate/bouquet%20chi/B.jpeg",
+      "/products/bouquet-chocolate/bouquet%20chi/B2.jpeg",
+      "/products/bouquet-chocolate/bouquet%20chi/B3.jpeg",
+    ],
+  },
+  {
+    id: "bouquet-chocolate-3",
+    name: {
+      "zh-CN": "可爱泰迪费列罗巧克力花束",
+      en: "Cute Teddy Ferrero Choco Bouquet",
+      ms: "Buket Coklat Ferrero Teddy Comel",
+    },
+    price: "RM55.00",
+    description: {
+      "zh-CN": "可爱泰迪熊配费列罗巧克力花束，甜蜜惊喜",
+      en: "Cute teddy bear with Ferrero chocolate bouquet, sweet surprise",
+      ms: "Teddy bear comel dengan buket coklat Ferrero, kejutan manis",
+    },
+    category: "bouquet-chocolate",
+    images: [
+      "/products/bouquet-chocolate/bouquet%20chi/C.jpeg",
+      "/products/bouquet-chocolate/bouquet%20chi/C2.jpeg",
+      "/products/bouquet-chocolate/bouquet%20chi/C3.jpeg",
+    ],
+  },
+  {
+    id: "bouquet-chocolate-4",
+    name: {
+      "zh-CN": "香皂玫瑰巧克力花束",
+      en: "Soap Rose with Choco Bouquet",
+      ms: "Buket Coklat dengan Mawar Sabun",
+    },
+    price: "RM39.90",
+    description: {
+      "zh-CN": "香皂玫瑰配巧克力花束，持久美丽",
+      en: "Soap roses with chocolate bouquet, lasting beauty",
+      ms: "Mawar sabun dengan buket coklat, kecantikan yang kekal",
+    },
+    category: "bouquet-chocolate",
+    images: [
+      "/products/bouquet-chocolate/bouquet%20chi/D.jpeg",
+      "/products/bouquet-chocolate/bouquet%20chi/D2.jpeg",
+      "/products/bouquet-chocolate/bouquet%20chi/D3.jpeg",
+      "/products/bouquet-chocolate/bouquet%20chi/D4.jpeg",
+      "/products/bouquet-chocolate/bouquet%20chi/D5.jpeg",
+    ],
+  },
+  {
+    id: "bouquet-chocolate-5",
+    name: {
+      "zh-CN": "10寸铝箔气球巧克力花束",
+      en: "10 Inch Foil Balloon with Choco Bouquet",
+      ms: "Buket Coklat dengan Belon Foil 10 Inci",
+    },
+    price: "RM55.00",
+    description: {
+      "zh-CN": "10寸铝箔气球配巧克力花束，闪亮夺目",
+      en: "10-inch foil balloon with chocolate bouquet, shining bright",
+      ms: "Belon foil 10 inci dengan buket coklat, bersinar terang",
+    },
+    category: "bouquet-chocolate",
+    images: ["/products/bouquet-chocolate/bouquet%20chi/E.jpeg"],
+  },
+  {
+    id: "bouquet-chocolate-6",
+    name: {
+      "zh-CN": "可爱气球巧克力花束",
+      en: "Cute Balloon with Choco Bouquet",
+      ms: "Buket Coklat dengan Belon Comel",
+    },
+    price: "RM50.00",
+    description: {
+      "zh-CN": "可爱气球配巧克力花束，童趣满满",
+      en: "Cute balloon with chocolate bouquet, full of childlike fun",
+      ms: "Belon comel dengan buket coklat, penuh keseronokan kanak-kanak",
+    },
+    category: "bouquet-chocolate",
+    images: ["/products/bouquet-chocolate/bouquet%20chi/F.jpeg"],
+  },
+  {
+    id: "bouquet-chocolate-7",
+    name: {
+      "zh-CN": "可爱气球巧克力花束",
+      en: "Cute Balloon with Choco Bouquet",
+      ms: "Buket Coklat dengan Belon Comel",
+    },
+    price: "RM45.00",
+    description: {
+      "zh-CN": "另一款可爱气球配巧克力花束，经济实惠",
+      en: "Another cute balloon with chocolate bouquet, affordable choice",
+      ms: "Satu lagi belon comel dengan buket coklat, pilihan berpatutan",
+    },
+    category: "bouquet-chocolate",
+    images: ["/products/bouquet-chocolate/bouquet%20chi/G.jpeg"],
+  },
+  {
+    id: "bouquet-chocolate-8",
+    name: {
+      "zh-CN": "香皂玫瑰巧克力花束",
+      en: "Soap Rose with Choco Bouquet",
+      ms: "Buket Coklat dengan Mawar Sabun",
+    },
+    price: "RM38.00",
+    description: {
+      "zh-CN": "精致香皂玫瑰配巧克力花束，优雅选择",
+      en: "Elegant soap roses with chocolate bouquet, refined choice",
+      ms: "Mawar sabun elegan dengan buket coklat, pilihan yang halus",
+    },
+    category: "bouquet-chocolate",
+    images: [
+      "/products/bouquet-chocolate/bouquet%20chi/H3.jpeg",
+      "/products/bouquet-chocolate/bouquet%20chi/H2.jpeg",
+      "/products/bouquet-chocolate/bouquet%20chi/H.jpeg",
+      "/products/bouquet-chocolate/bouquet%20chi/H4.jpeg",
+    ],
+  },
+  {
+    id: "bouquet-chocolate-9",
+    name: {
+      "zh-CN": "费列罗香皂玫瑰花束",
+      en: "Ferrero & Soap Rose Bouquet",
+      ms: "Buket Mawar Sabun & Ferrero",
+    },
+    price: "RM45.00",
+    description: {
+      "zh-CN": "4颗费列罗巧克力配5朵香皂玫瑰，完美组合",
+      en: "4pcs Ferrero chocolate with 5pcs soap roses, perfect combination",
+      ms: "4 biji coklat Ferrero dengan 5 kuntum mawar sabun, gabungan sempurna",
+    },
+    category: "bouquet-chocolate",
+    images: [
+      "/products/bouquet-chocolate/bouquet%20chi/I.jpeg",
+      "/products/bouquet-chocolate/bouquet%20chi/I2.jpeg",
+      "/products/bouquet-chocolate/bouquet%20chi/I3.jpeg",
+      "/products/bouquet-chocolate/bouquet%20chi/I4.jpeg",
+      "/products/bouquet-chocolate/bouquet%20chi/H5.jpeg",
+      "/products/bouquet-chocolate/bouquet%20chi/H6.jpeg",
+    ],
+  },
+  {
+    id: "bouquet-chocolate-10",
+    name: {
+      "zh-CN": "费列罗香皂玫瑰花束",
+      en: "Ferrero & Soap Rose Bouquet",
+      ms: "Buket Mawar Sabun & Ferrero",
+    },
+    price: "RM70.00",
+    description: {
+      "zh-CN": "7颗费列罗巧克力配10朵香皂玫瑰，豪华版本",
+      en: "7pcs Ferrero chocolate with 10pcs soap roses, luxury version",
+      ms: "7 biji coklat Ferrero dengan 10 kuntum mawar sabun, versi mewah",
+    },
+    category: "bouquet-chocolate",
+    images: ["/products/bouquet-chocolate/bouquet%20chi/J.jpeg"],
+  },
+  {
+    id: "bouquet-chocolate-11",
+    name: {
+      "zh-CN": "香皂玫瑰巧克力花束",
+      en: "Soap Rose & Choco Bouquet",
+      ms: "Buket Coklat & Mawar Sabun",
+    },
+    price: "RM45.00",
+    description: {
+      "zh-CN": "香皂玫瑰与巧克力的经典搭配",
+      en: "Classic combination of soap roses and chocolate",
+      ms: "Gabungan klasik mawar sabun dan coklat",
+    },
+    category: "bouquet-chocolate",
+    images: ["/products/bouquet-chocolate/bouquet%20chi/K.jpeg"],
+  },
+  {
+    id: "bouquet-chocolate-12",
+    name: {
+      "zh-CN": "10寸铝箔气球巧克力花束",
+      en: "10 Inch Foil Balloon Choco Bouquet",
+      ms: "Buket Coklat Belon Foil 10 Inci",
+    },
+    price: "RM58.00",
+    description: {
+      "zh-CN": "10寸铝箔气球巧克力花束，包含定制贴纸",
+      en: "10-inch foil balloon chocolate bouquet, includes customize sticker",
+      ms: "Buket coklat belon foil 10 inci, termasuk pelekat khas",
+    },
+    category: "bouquet-chocolate",
+    images: ["/products/bouquet-chocolate/chco%26duit%20bou/A.jpeg"],
+  },
+  {
+    id: "bouquet-chocolate-13",
+    name: {
+      "zh-CN": "费列罗满天星花束",
+      en: "Ferrero & Baby Breath Bouquet",
+      ms: "Buket Baby Breath & Ferrero",
+    },
+    price: "RM99.00",
+    description: {
+      "zh-CN": "12颗费列罗巧克力配满天星花束，奢华选择",
+      en: "12pcs Ferrero chocolate with baby breath bouquet, luxury choice",
+      ms: "12 biji coklat Ferrero dengan buket baby breath, pilihan mewah",
+    },
+    category: "bouquet-chocolate",
+    images: ["/products/bouquet-chocolate/chco%26duit%20bou/B.jpeg"],
+  },
+  {
+    id: "bouquet-chocolate-14",
+    name: {
+      "zh-CN": "巧克力香皂玫瑰花束",
+      en: "Choco Soap Rose Bouquet",
+      ms: "Buket Mawar Sabun Coklat",
+    },
+    price: "RM45.00",
+    description: {
+      "zh-CN": "巧克力与香皂玫瑰的完美结合",
+      en: "Perfect combination of chocolate and soap roses",
+      ms: "Gabungan sempurna coklat dan mawar sabun",
+    },
+    category: "bouquet-chocolate",
+    images: [
+      "/products/bouquet-chocolate/chco%26duit%20bou/C.jpeg",
+      "/products/bouquet-chocolate/chco%26duit%20bou/C2.jpeg",
+    ],
+  },
+  {
+    id: "bouquet-chocolate-15",
+    name: {
+      "zh-CN": "迷你气球巧克力花束",
+      en: "Mini Balloon Choco Bouquet",
+      ms: "Buket Coklat Belon Mini",
+    },
+    price: "RM78.00",
+    description: {
+      "zh-CN": "高级版迷你气球巧克力花束",
+      en: "Premium mini balloon chocolate bouquet",
+      ms: "Buket coklat belon mini premium",
+    },
+    category: "bouquet-chocolate",
+    images: ["/products/bouquet-chocolate/chco%26duit%20bou/D.jpeg"],
+  },
+  {
+    id: "bouquet-chocolate-16",
+    name: {
+      "zh-CN": "8寸波波巧克力花束",
+      en: "8 Inch Bobo Choco Bouquet",
+      ms: "Buket Coklat Bobo 8 Inci",
+    },
+    price: "RM50.00",
+    description: {
+      "zh-CN": "另一款8寸波波巧克力花束，经典选择",
+      en: "Another 8-inch bobo chocolate bouquet, classic choice",
+      ms: "Satu lagi buket coklat bobo 8 inci, pilihan klasik",
+    },
+    category: "bouquet-chocolate",
+    images: ["/products/bouquet-chocolate/chco%26duit%20bou/E.jpeg"],
+  },
 ]
 
 export interface Category {
@@ -1489,6 +1780,14 @@ export const categories: Category[] = [
       "zh-CN": "Bobo气球巧克力花礼品盒",
       en: "Bobo Balloon Chocolate Flower Gift Box",
       ms: "Kotak Hadiah Bunga Coklat Belon Bobo",
+    },
+  },
+  {
+    id: "bouquet-chocolate",
+    name: {
+      "zh-CN": "花束巧克力",
+      en: "Bouquet Chocolate",
+      ms: "Buket Coklat",
     },
   },
 ]
