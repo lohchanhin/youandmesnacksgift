@@ -1480,10 +1480,10 @@ export const products: Product[] = [
     },
     category: "bouquet-chocolate",
     images: [
-      "/products/bouquet-chocolate/bouquet%20chi/A.jpeg",
-      "/products/bouquet-chocolate/bouquet%20chi/A2.jpeg",
-      "/products/bouquet-chocolate/bouquet%20chi/A3.jpeg",
-      "/products/bouquet-chocolate/bouquet%20chi/A4.jpeg",
+      "/products/bouquet-chocolate/bouquet-chi/A.jpeg",
+      "/products/bouquet-chocolate/bouquet-chi/A2.jpeg",
+      "/products/bouquet-chocolate/bouquet-chi/A3.jpeg",
+      "/products/bouquet-chocolate/bouquet-chi/A4.jpeg",
     ],
   },
   {
@@ -1501,9 +1501,9 @@ export const products: Product[] = [
     },
     category: "bouquet-chocolate",
     images: [
-      "/products/bouquet-chocolate/bouquet%20chi/B.jpeg",
-      "/products/bouquet-chocolate/bouquet%20chi/B2.jpeg",
-      "/products/bouquet-chocolate/bouquet%20chi/B3.jpeg",
+      "/products/bouquet-chocolate/bouquet-chi/B.jpeg",
+      "/products/bouquet-chocolate/bouquet-chi/B2.jpeg",
+      "/products/bouquet-chocolate/bouquet-chi/B3.jpeg",
     ],
   },
   {
@@ -1521,9 +1521,9 @@ export const products: Product[] = [
     },
     category: "bouquet-chocolate",
     images: [
-      "/products/bouquet-chocolate/bouquet%20chi/C.jpeg",
-      "/products/bouquet-chocolate/bouquet%20chi/C2.jpeg",
-      "/products/bouquet-chocolate/bouquet%20chi/C3.jpeg",
+      "/products/bouquet-chocolate/bouquet-chi/C.jpeg",
+      "/products/bouquet-chocolate/bouquet-chi/C2.jpeg",
+      "/products/bouquet-chocolate/bouquet-chi/C3.jpeg",
     ],
   },
   {
@@ -1541,11 +1541,11 @@ export const products: Product[] = [
     },
     category: "bouquet-chocolate",
     images: [
-      "/products/bouquet-chocolate/bouquet%20chi/D.jpeg",
-      "/products/bouquet-chocolate/bouquet%20chi/D2.jpeg",
-      "/products/bouquet-chocolate/bouquet%20chi/D3.jpeg",
-      "/products/bouquet-chocolate/bouquet%20chi/D4.jpeg",
-      "/products/bouquet-chocolate/bouquet%20chi/D5.jpeg",
+      "/products/bouquet-chocolate/bouquet-chi/D.jpeg",
+      "/products/bouquet-chocolate/bouquet-chi/D2.jpeg",
+      "/products/bouquet-chocolate/bouquet-chi/D3.jpeg",
+      "/products/bouquet-chocolate/bouquet-chi/D4.jpeg",
+      "/products/bouquet-chocolate/bouquet-chi/D5.jpeg",
     ],
   },
   {
@@ -1562,7 +1562,7 @@ export const products: Product[] = [
       ms: "Belon foil 10 inci dengan buket coklat, bersinar terang",
     },
     category: "bouquet-chocolate",
-    images: ["/products/bouquet-chocolate/bouquet%20chi/E.jpeg"],
+    images: ["/products/bouquet-chocolate/bouquet-chi/E.jpeg"],
   },
   {
     id: "bouquet-chocolate-6",
@@ -1578,7 +1578,7 @@ export const products: Product[] = [
       ms: "Belon comel dengan buket coklat, penuh keseronokan kanak-kanak",
     },
     category: "bouquet-chocolate",
-    images: ["/products/bouquet-chocolate/bouquet%20chi/F.jpeg"],
+    images: ["/products/bouquet-chocolate/bouquet-chi/F.jpeg"],
   },
   {
     id: "bouquet-chocolate-7",
@@ -1594,7 +1594,7 @@ export const products: Product[] = [
       ms: "Satu lagi belon comel dengan buket coklat, pilihan berpatutan",
     },
     category: "bouquet-chocolate",
-    images: ["/products/bouquet-chocolate/bouquet%20chi/G.jpeg"],
+    images: ["/products/bouquet-chocolate/bouquet-chi/G.jpeg"],
   },
   {
     id: "bouquet-chocolate-8",
@@ -1611,10 +1611,10 @@ export const products: Product[] = [
     },
     category: "bouquet-chocolate",
     images: [
-      "/products/bouquet-chocolate/bouquet%20chi/H3.jpeg",
-      "/products/bouquet-chocolate/bouquet%20chi/H2.jpeg",
-      "/products/bouquet-chocolate/bouquet%20chi/H.jpeg",
-      "/products/bouquet-chocolate/bouquet%20chi/H4.jpeg",
+      "/products/bouquet-chocolate/bouquet-chi/H3.jpeg",
+      "/products/bouquet-chocolate/bouquet-chi/H2.jpeg",
+      "/products/bouquet-chocolate/bouquet-chi/H.jpeg",
+      "/products/bouquet-chocolate/bouquet-chi/H4.jpeg",
     ],
   },
   {
@@ -1632,12 +1632,12 @@ export const products: Product[] = [
     },
     category: "bouquet-chocolate",
     images: [
-      "/products/bouquet-chocolate/bouquet%20chi/I.jpeg",
-      "/products/bouquet-chocolate/bouquet%20chi/I2.jpeg",
-      "/products/bouquet-chocolate/bouquet%20chi/I3.jpeg",
-      "/products/bouquet-chocolate/bouquet%20chi/I4.jpeg",
-      "/products/bouquet-chocolate/bouquet%20chi/H5.jpeg",
-      "/products/bouquet-chocolate/bouquet%20chi/H6.jpeg",
+      "/products/bouquet-chocolate/bouquet-chi/I.jpeg",
+      "/products/bouquet-chocolate/bouquet-chi/I2.jpeg",
+      "/products/bouquet-chocolate/bouquet-chi/I3.jpeg",
+      "/products/bouquet-chocolate/bouquet-chi/I4.jpeg",
+      "/products/bouquet-chocolate/bouquet-chi/H5.jpeg",
+      "/products/bouquet-chocolate/bouquet-chi/H6.jpeg",
     ],
   },
   {
@@ -1654,7 +1654,7 @@ export const products: Product[] = [
       ms: "7 biji coklat Ferrero dengan 10 kuntum mawar sabun, versi mewah",
     },
     category: "bouquet-chocolate",
-    images: ["/products/bouquet-chocolate/bouquet%20chi/J.jpeg"],
+    images: ["/products/bouquet-chocolate/bouquet-chi/J.jpeg"],
   },
   {
     id: "bouquet-chocolate-11",
@@ -1670,7 +1670,7 @@ export const products: Product[] = [
       ms: "Gabungan klasik mawar sabun dan coklat",
     },
     category: "bouquet-chocolate",
-    images: ["/products/bouquet-chocolate/bouquet%20chi/K.jpeg"],
+    images: ["/products/bouquet-chocolate/bouquet-chi/K.jpeg"],
   },
   {
     id: "bouquet-chocolate-12",
@@ -1686,7 +1686,7 @@ export const products: Product[] = [
       ms: "Buket coklat belon foil 10 inci, termasuk pelekat khas",
     },
     category: "bouquet-chocolate",
-    images: ["/products/bouquet-chocolate/chco%26duit%20bou/A.jpeg"],
+    images: ["/products/bouquet-chocolate/chco-duit-bou/A.jpeg"],
   },
   {
     id: "bouquet-chocolate-13",
@@ -1702,7 +1702,7 @@ export const products: Product[] = [
       ms: "12 biji coklat Ferrero dengan buket baby breath, pilihan mewah",
     },
     category: "bouquet-chocolate",
-    images: ["/products/bouquet-chocolate/chco%26duit%20bou/B.jpeg"],
+    images: ["/products/bouquet-chocolate/chco-duit-bou/B.jpeg"],
   },
   {
     id: "bouquet-chocolate-14",
@@ -1718,10 +1718,7 @@ export const products: Product[] = [
       ms: "Gabungan sempurna coklat dan mawar sabun",
     },
     category: "bouquet-chocolate",
-    images: [
-      "/products/bouquet-chocolate/chco%26duit%20bou/C.jpeg",
-      "/products/bouquet-chocolate/chco%26duit%20bou/C2.jpeg",
-    ],
+    images: ["/products/bouquet-chocolate/chco-duit-bou/C.jpeg", "/products/bouquet-chocolate/chco-duit-bou/C2.jpeg"],
   },
   {
     id: "bouquet-chocolate-15",
@@ -1737,7 +1734,7 @@ export const products: Product[] = [
       ms: "Buket coklat belon mini premium",
     },
     category: "bouquet-chocolate",
-    images: ["/products/bouquet-chocolate/chco%26duit%20bou/D.jpeg"],
+    images: ["/products/bouquet-chocolate/chco-duit-bou/D.jpeg"],
   },
   {
     id: "bouquet-chocolate-16",
@@ -1753,7 +1750,7 @@ export const products: Product[] = [
       ms: "Satu lagi buket coklat bobo 8 inci, pilihan klasik",
     },
     category: "bouquet-chocolate",
-    images: ["/products/bouquet-chocolate/chco%26duit%20bou/E.jpeg"],
+    images: ["/products/bouquet-chocolate/chco-duit-bou/E.jpeg"],
   },
 ]
 
