@@ -441,17 +441,17 @@ export const products: Product[] = [
 
   // Graduation Bouquet Category
   {
-    id: "graduation-1",
+    id: "graduation-bear-sunflower",
     name: {
-      "zh-CN": "毕业套装",
-      en: "Graduation Set",
-      ms: "Set Graduasi",
+      "zh-CN": "毕业熊向日葵花束",
+      en: "Graduation Bear Sunflower Bouquet",
+      ms: "Buket Bunga Matahari Beruang Graduasi",
     },
-    price: "N/A",
+    price: "RM30.00",
     description: {
-      "zh-CN": "毕业花束套装",
-      en: "Graduation bouquet set",
-      ms: "Set buket graduasi",
+      "zh-CN": "毕业熊向日葵花束，温馨可爱的毕业礼物",
+      en: "Graduation bear sunflower bouquet, warm and lovely graduation gift",
+      ms: "Buket bunga matahari beruang graduasi, hadiah graduasi yang mesra dan comel",
     },
     category: "graduation",
     images: [
@@ -459,23 +459,114 @@ export const products: Product[] = [
       "/products/graduation/img-2.jpeg",
       "/products/graduation/img-3.jpeg",
       "/products/graduation/img-4.jpeg",
+    ],
+  },
+  {
+    id: "graduation-bear-baby-breath",
+    name: {
+      "zh-CN": "毕业熊满天星花束",
+      en: "Graduation Bear Baby Breath Bouquet",
+      ms: "Buket Baby Breath Beruang Graduasi",
+    },
+    price: "RM39.00",
+    description: {
+      "zh-CN": "毕业熊满天星花束，优雅精致的毕业纪念",
+      en: "Graduation bear baby breath bouquet, elegant and exquisite graduation memorial",
+      ms: "Buket baby breath beruang graduasi, kenangan graduasi yang elegan dan halus",
+    },
+    category: "graduation",
+    images: [
       "/products/graduation/img-5.jpeg",
       "/products/graduation/img-6.jpeg",
       "/products/graduation/img-7.jpeg",
       "/products/graduation/img-8.jpeg",
       "/products/graduation/img-9.jpeg",
+    ],
+  },
+  {
+    id: "sunflower-soap-rose",
+    name: {
+      "zh-CN": "向日葵香皂玫瑰花束",
+      en: "Sunflower Soap Rose Bouquet",
+      ms: "Buket Ros Sabun Bunga Matahari",
+    },
+    price: "RM16.00",
+    description: {
+      "zh-CN": "向日葵香皂玫瑰花束，经济实惠的毕业礼品",
+      en: "Sunflower soap rose bouquet, affordable graduation gift",
+      ms: "Buket ros sabun bunga matahari, hadiah graduasi yang berpatutan",
+    },
+    category: "graduation",
+    images: [
       "/products/graduation/img-10.jpeg",
       "/products/graduation/img-11.jpeg",
       "/products/graduation/img-12.jpeg",
       "/products/graduation/img-13.jpeg",
-      "/products/graduation/img-14.jpeg",
-      "/products/graduation/img-15.jpeg",
-      "/products/graduation/img-16.jpeg",
-      "/products/graduation/img-17.jpeg",
-      "/products/graduation/img-18.jpeg",
-      "/products/graduation/img-19.jpeg",
-      "/products/graduation/img-20.jpeg",
     ],
+  },
+  {
+    id: "chocolate-graduation",
+    name: {
+      "zh-CN": "巧克力毕业花束",
+      en: "Chocolate Graduation Bouquet",
+      ms: "Buket Graduasi Coklat",
+    },
+    price: "RM70.00",
+    description: {
+      "zh-CN": "巧克力毕业花束，甜蜜的毕业祝福",
+      en: "Chocolate graduation bouquet, sweet graduation blessing",
+      ms: "Buket graduasi coklat, berkat graduasi yang manis",
+    },
+    category: "graduation",
+    images: ["/products/graduation/img-14.jpeg"],
+  },
+  {
+    id: "snacks-chocolate-graduation",
+    name: {
+      "zh-CN": "零食巧克力毕业花束",
+      en: "Snacks Chocolate Graduation Bouquet",
+      ms: "Buket Graduasi Coklat Snek",
+    },
+    price: "RM65.00",
+    description: {
+      "zh-CN": "零食巧克力毕业花束，美味的毕业庆祝",
+      en: "Snacks chocolate graduation bouquet, delicious graduation celebration",
+      ms: "Buket graduasi coklat snek, sambutan graduasi yang sedap",
+    },
+    category: "graduation",
+    images: ["/products/graduation/img-15.jpeg"],
+  },
+  {
+    id: "15pcs-soap-rose-graduation",
+    name: {
+      "zh-CN": "15朵香皂玫瑰毕业花束",
+      en: "15PCS Soap Rose Graduation Bouquet",
+      ms: "Buket Graduasi 15 Keping Ros Sabun",
+    },
+    price: "RM99.00",
+    description: {
+      "zh-CN": "15朵香皂玫瑰毕业花束，豪华的毕业礼品",
+      en: "15pcs soap rose graduation bouquet, luxurious graduation gift",
+      ms: "Buket graduasi 15 keping ros sabun, hadiah graduasi yang mewah",
+    },
+    category: "graduation",
+    images: ["/products/graduation/img-16.jpeg"],
+  },
+  {
+    id: "mix-soap-flower-graduation",
+    name: {
+      "zh-CN": "混合香皂花毕业花束",
+      en: "Mix Soap Flower Graduation Bouquet",
+      ms: "Buket Graduasi Bunga Sabun Campuran",
+    },
+    price: "RM89.00",
+    description: {
+      "zh-CN": "混合香皂花毕业花束，多样化的毕业纪念品",
+      en: "Mix soap flower graduation bouquet, diversified graduation souvenir",
+      ms: "Buket graduasi bunga sabun campuran, cenderahati graduasi yang pelbagai",
+    },
+    category: "graduation",
+    images: ["/products/graduation/img-17.jpeg", "/products/graduation/img-18.jpeg"],
   },
 
   // Flower Bouquet Category (19 products)
@@ -894,13 +985,13 @@ export const products: Product[] = [
     name: {
       "zh-CN": "迷你秋季花束H",
       en: "Mini Autumn Bouquet H",
-      ms: "Buket Bunga Musim Luruh Mini H",
+      ms: "Buket Bunga Musim Panas Mini H",
     },
     price: "RM19.00-RM24.00",
     description: {
       "zh-CN": "小秋季花束排列",
       en: "Arrangement of mini autumn bouquet",
-      ms: "Penataan buket bunga musim luruh mini",
+      ms: "Penataan buket bunga musim panas mini",
     },
     category: "mini-bouquet",
     images: ["/products/mini-bouquet/h.jpeg"],
@@ -910,13 +1001,13 @@ export const products: Product[] = [
     name: {
       "zh-CN": "迷你冬季花束I",
       en: "Mini Winter Bouquet I",
-      ms: "Buket Bunga Musim Sejuk Mini I",
+      ms: "Buket Bunga Musim Dingin Mini I",
     },
     price: "RM20.00-RM25.00",
     description: {
       "zh-CN": "小冬季花束排列",
       en: "Arrangement of mini winter bouquet",
-      ms: "Penataan buket bunga musim sejuk mini",
+      ms: "Penataan buket bunga musim dingin mini",
     },
     category: "mini-bouquet",
     images: ["/products/mini-bouquet/i.jpeg"],
@@ -1479,6 +1570,9 @@ export const products: Product[] = [
       "/products/sticker/img-15.jpeg",
       "/products/sticker/img-16.jpeg",
       "/products/sticker/img-17.jpeg",
+      "/products/sticker/img-18.jpeg",
+      "/products/sticker/img-19.jpeg",
+      "/products/sticker/img-20.jpeg",
     ],
   },
 ]
