@@ -455,10 +455,10 @@ export const products: Product[] = [
     },
     category: "graduation",
     images: [
-      "/products/graduation/img-1.jpeg",
-      "/products/graduation/img-2.jpeg",
-      "/products/graduation/img-3.jpeg",
-      "/products/graduation/img-4.jpeg",
+      "/products/graduation/A.jpeg",
+      "/products/graduation/A2.jpeg",
+      "/products/graduation/A3.jpeg",
+      "/products/graduation/A4.jpeg",
     ],
   },
   {
@@ -476,11 +476,11 @@ export const products: Product[] = [
     },
     category: "graduation",
     images: [
-      "/products/graduation/img-5.jpeg",
-      "/products/graduation/img-6.jpeg",
-      "/products/graduation/img-7.jpeg",
-      "/products/graduation/img-8.jpeg",
-      "/products/graduation/img-9.jpeg",
+      "/products/graduation/B.jpeg",
+      "/products/graduation/B2.jpeg",
+      "/products/graduation/B3.jpeg",
+      "/products/graduation/B4.jpeg",
+      "/products/graduation/B5.jpeg",
     ],
   },
   {
@@ -498,10 +498,11 @@ export const products: Product[] = [
     },
     category: "graduation",
     images: [
-      "/products/graduation/img-10.jpeg",
-      "/products/graduation/img-11.jpeg",
-      "/products/graduation/img-12.jpeg",
-      "/products/graduation/img-13.jpeg",
+      "/products/graduation/C.jpeg",
+      "/products/graduation/C2.jpeg",
+      "/products/graduation/C3.jpeg",
+      "/products/graduation/C4.jpeg",
+      "/products/graduation/C5.jpeg"
     ],
   },
   {
@@ -518,7 +519,7 @@ export const products: Product[] = [
       ms: "Buket graduasi coklat, berkat graduasi yang manis",
     },
     category: "graduation",
-    images: ["/products/graduation/img-14.jpeg"],
+    images: ["/products/graduation/D.jpeg"],
   },
   {
     id: "snacks-chocolate-graduation",
@@ -534,7 +535,7 @@ export const products: Product[] = [
       ms: "Buket graduasi coklat snek, sambutan graduasi yang sedap",
     },
     category: "graduation",
-    images: ["/products/graduation/img-15.jpeg"],
+    images: ["/products/graduation/E.jpeg"],
   },
   {
     id: "15pcs-soap-rose-graduation",
@@ -550,7 +551,7 @@ export const products: Product[] = [
       ms: "Buket graduasi 15 keping ros sabun, hadiah graduasi yang mewah",
     },
     category: "graduation",
-    images: ["/products/graduation/img-16.jpeg"],
+    images: ["/products/graduation/F.jpeg"],
   },
   {
     id: "mix-soap-flower-graduation",
@@ -566,7 +567,7 @@ export const products: Product[] = [
       ms: "Buket graduasi bunga sabun campuran, cenderahati graduasi yang pelbagai",
     },
     category: "graduation",
-    images: ["/products/graduation/img-17.jpeg", "/products/graduation/img-18.jpeg"],
+    images: ["/products/graduation/G.jpeg", "/products/graduation/G2.jpeg"],
   },
 
   // Flower Bouquet Category (19 products)
